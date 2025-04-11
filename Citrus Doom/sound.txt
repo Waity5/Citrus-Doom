@@ -177,7 +177,7 @@ function onTick()
 						cr[2]=info[3]
 					elseif cr<0 and M[1][-cr] then
 						info=M[1][-cr][6]
-						if M[16][info][5]>0 or trueVar then
+						if M[16][info][5]>0 then
 							yellow=mx(yellow,15)
 						end
 						table.remove(M[1],-cr)
