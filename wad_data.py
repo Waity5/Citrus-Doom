@@ -314,7 +314,7 @@ if __name__ == '__main__':
         file.close()
 
         print(name)
-        code = compress(code,print_vars=i==-1,delete_newlines=True)
+        code = compress(code,print_vars=i==-1,delete_newlines=i<2)
         print()
         
         find_start = ["""<c type="56"><object id="4" script='""",
@@ -328,9 +328,9 @@ if __name__ == '__main__':
 
         start = text.find(find_start)
         end = text.find(find_end,start)
-        if i==1:
+        if i==-1:
             None
-            #print(code.split("\n")[660-1])
+            print(code.split("\n")[152-1])
             
 
         assert start>0 and end>0, "Code insertion search terms not in base doom file"

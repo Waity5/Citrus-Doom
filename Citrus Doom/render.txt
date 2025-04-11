@@ -42,11 +42,8 @@ hghtH=hght//2
 thngs={}
 LOD=400-- higher is more quality
 health=100
-yellow=0
-red=0
 mRandom=0
 transferCache={}
-weaponList={1,1}
 bigNumb=32768
 
 tick=0
@@ -89,7 +86,7 @@ end
 function onTick()
 	mN=0
 
-	for j=1,4 do
+	for j=1,3 do
 		if gB(9) and (not loaded)or not M[21]then
 			rom=property.getText(romCr.."")
 			if rom~="" then
@@ -166,19 +163,14 @@ function onTick()
 		
 		if gB(1) then
 			weapon=gN(1)
-			red=mx(red-4,0)
-			red=clmp(red+(health-gN(3))*3,0,255)
 			health=gN(3)
-			armour=gN(4)
 			tick=tick+1
 			if init then
-				yellow=50
 				for i=1,10 do
 					M[i]=M[i+10*levelCr]
 				end
 				levelCr=levelCr+1
 			end
-			yellow=mx(yellow-1.5,0)
 			if gN(2)>0 then
 				LOD=mx(LOD+3*(gN(2)-3006),1)
 			end
@@ -194,10 +186,6 @@ function onTick()
 						cr[1]=info[2]
 						cr[2]=info[3]
 					elseif cr<0 and M[1][-cr] then
-						info=M[1][-cr][6]
-						if M[16][info][5]>0 then
-							yellow=mx(yellow,15)
-						end
 						table.remove(M[1],-cr)
 					else
 						if M[1][cr]==nil then
@@ -468,20 +456,7 @@ function onTick()
 				i=i+1
 			end
 			
-			if tick%16==1 then
-				mRandom=mRandom%256+1
-				face=(4-mn(health//20,4))*8
-				if weaponList[weapon] then
-					face=face+M[13][1][mRandom]%3
-				else
-					weaponList[weapon]=1
-					face=face+6
-				end
-				
-				if health<=0 then
-					face=41
-				end
-			end
+			
 		end
 
 
@@ -627,75 +602,5 @@ function onDraw()
 				end
 			end
 		end
-		
-		if loaded then
-			if not weapon then
-				weapon=2
-			end
-			tex=M[23][M[14][weapon][13]]
-			tW,tH,pxSize=tex[1],tex[2],tex[3]*0.7
-			pxSizeV=pxSize*pixelAspectCorrection
-			x1,y1=wdthH-(tex[4]+160)*0.7,hght-(tex[5]+148)*0.7*pixelAspectCorrection
-			aOff=7
-		elseif M[21] then
-			tex=M[25][1]
-			tW,tH,pxSize=tex[1],tex[2],1
-			x1,y1=wdthH-tW/2,80-tH/2
-			pxSizeV=pxSize
-			aOff=5
-		end
-		
-		if M[21]and health>0 then
-			for k=0,tW-1 do
-				x2=x1+k*pxSize
-				for n=0,tH-1 do
-					pix=tex[aOff+n+k*tH]
-					if pix~= 0 then
-						col=M[20][pix]
-						stCl(col[1],col[2],col[3])
-						rec(x2,y1+n*pxSizeV,pxSize,pxSizeV)
-					end
-				end
-			end
-		end
-		
-		
-		if loaded then
-			stCl(255,red>0 and 0 or 255,0,red+yellow)
-			rec(0,0,wdth,hght)
-			
-			stCl(50,50,50)
-			rec(0,hght,wdth,32)
-			stCl(25,25,25)
-			rec(wdthH-16,hght,32,32)
-			tex=M[23][M[19][3][1]+face]
-			tW,tH=tex[1],tex[2]
-			x1=wdthH-tW/2
-			for i=0,tW-1 do
-				for j=0,tH-1 do
-					pix=tex[7+j+i*tH]
-					if pix~=0 then
-						col=M[20][pix]
-						stCl(col[1],col[2],col[3])
-						rec(x1+i,hght+1+j,1,1)
-					end
-				end
-			end
-			for i=5,7 do
-				cr=M[19][i]
-				stCl(cr[1],cr[2],cr[3])
-				rec(229,95+i*7,6,7)
-			end
-			stCl(255,255,255)
-			text(100,131,flr(health))
-			text(100,137,flr(armour))
-			text(1,143,"DIF:")
-			text(26,149,LOD)
-		end
-		
-		
-		text(1,131,"ROM:")
-		text(26,131,romCr)
-		text(1,137,"TPS:")
 	end
 end
