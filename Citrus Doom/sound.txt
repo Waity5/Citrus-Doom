@@ -1,0 +1,125 @@
+m=math
+mx=m.max
+mn=m.min
+absFunc=m.abs
+flr=m.floor
+sqrt=m.sqrt
+gN=input.getNumber
+gB=input.getBool
+sN=output.setNumber
+pi=m.pi
+falseVar=false
+trueVar=true
+
+function cross(a,b)return a[1]*b[2]-a[2]*b[1]end
+function sub(a,b)return{(a[1]-b[1]),(a[2]-b[2])}end
+function wrap(a)return ((a+180)%360)-180 end
+function cos(a)return m.cos(a/180*pi)end
+function tan(a)return m.tan(a/180*pi)end
+function at(a)return m.atan(a)*180/pi end
+function at2(a)return m.atan(a[2],a[1])*180/pi end
+function clmp(a,b,c)return mn(mx(b,a),c)end
+function rnd(a)return flr(a+0.5)end
+function dist(a,b)return sqrt(((a[1]-b[1])^2)+((a[2]-b[2])^2))end
+function rnd2(a)
+	a=a-1
+	a=a|(a>>1)
+	a=a|(a>>2)
+	a=a|(a>>4)
+	return a+1
+end
+
+M={}
+romCr=1
+levelCr=3
+loaded=falseVar
+tick=1
+
+tick=0
+stg=1
+
+function onTick()
+	mN=0
+
+	for j=1,4 do
+		if false then
+			rom=property.getText(romCr.."")
+			if rom~="" then
+				i=1
+				nm=""
+				cr=string.sub(rom,i,i)
+				while cr~=""or nm~=""do
+					if cr==","or cr==""then
+						nm=nm+0
+
+						if stg==1 then
+							crI=nm
+							if M[nm]==nil then
+								M[nm]={}
+							end
+							stg=2
+						elseif stg==2 then
+							l=nm
+							crL=0
+							stg=3
+						elseif stg==3 then
+							cnt=nm
+							stg=4
+						else
+							if crL==0 then
+								crL=l
+								cnt=cnt-1
+								crM={}
+								M[crI][#M[crI]+1]=crM
+							end
+							crM[#crM+1]=nm
+							crL=crL-1
+							if mx(crL,cnt)==0 then
+								stg=1
+							end
+						end
+
+						nm=""
+					else
+						nm=nm.. cr
+					end
+					i=i+1
+					cr=string.sub(rom,i,i)
+				end
+
+				romCr=romCr+1
+			else
+				loaded=trueVar
+			end
+		end
+	end
+
+	if loaded then
+		
+		
+		
+		
+		sN(5,0)
+		
+		cr=M[18][1]
+		if ((tick*2-1)%300)+1<=#cr then
+			cr=cr[((tick*2-1)%300)+1]
+			if cr>0 then
+				sN(5,clmp(rnd((cr+12)//2),1,60))
+			end
+		end
+		tick=tick+1
+		if gB(1) then
+			
+			
+		end
+		
+
+	end
+
+
+end
+
+function onDraw()
+	
+end
