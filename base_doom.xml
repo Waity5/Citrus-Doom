@@ -1,0 +1,1538 @@
+<?xml version="1.0" encoding="UTF-8"?><vehicle data_version="3" bodies_id="76"><editor_placement_offset y="-4.25207"/><authors/><bodies><body unique_id="56"><components><c d="battery_small"><o r="1,0,0,0,1,0,0,0,1" sc="2"><vp x="1" y="1" z="1"/><logic_slots><slot/><slot/><slot/></logic_slots></o></c><c d="gate_bool_constant"><o r="0,-1,0,0,0,1,-1,0,0" sc="1" timer_scalar_1="0.183" timer_scalar_2="0.183"><vp x="-1" y="1" z="1"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots><property_output_float_val text="0"/><min_threshold text="0"/><max_threshold text="0"/><pid_controller_ki text="1" value="1"/><pid_controller_kp text="1" value="1"/><pid_controller_kd text="1" value="1"/><pid_controller_max_error text="0"/><exp text="2" value="2"/><min_lever_value text="-1" value="-1"/><max_lever_value text="1" value="1"/><starting_lever_value text="0"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="1"/></o></c><c d="battery_large"><o r="1,0,0,0,1,0,0,0,1" sc="35"><vp x="-1" y="3" z="4"/><logic_slots><slot/><slot/><slot/></logic_slots></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" y="1" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" y="2" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" y="3" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" y="2" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" y="3" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="2" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="3" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" y="4" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" y="4" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="4" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" y="5" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" y="5" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="5" z="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"/></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-2"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-3"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-4"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-5"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-6"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-6" z="-12"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" z="-12"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="-12"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="-12"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="-12"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="-12"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="-12"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" z="-12"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" z="-12"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" z="-12"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="4" z="-12"/></o></c><c d="monitor_9"><o r="1,0,0,0,0,-1,0,1,0" sc="73"><vp x="-1" y="4"/><logic_slots><slot editor_connected="1"/><slot/><slot editor_connected="1"/></logic_slots></o></c><c d="inventory_equipment_first_aid"><o sc="5"><vp x="-3" y="1" z="1"/><logic_slots/></o></c><c d="inventory_equipment_first_aid"><o sc="5"><vp x="-3" y="2" z="1"/><logic_slots/></o></c><c d="inventory_equipment_first_aid"><o sc="5"><vp x="-3" y="3" z="1"/><logic_slots/></o></c><c d="inventory_equipment_first_aid"><o sc="5"><vp x="-3" y="4" z="1"/><logic_slots/></o></c><c d="inventory_equipment_first_aid"><o sc="5"><vp x="-3" y="5" z="1"/><logic_slots/></o></c><c d="viewing_scope"><o r="0,-1,0,0,0,-1,1,0,0" sc="5"><vp x="-1" y="1"/><logic_slots><slot editor_connected="1"/><slot/></logic_slots></o></c><c d="seat_hotas"><o r="1,0,0,0,1,0,0,0,1" sc="44" trigger="1" trigger_label="Fire" hotkey_0="1" hotkey_1="1" hotkey_2="1" hotkey_3="1" hotkey_4="1" hotkey_5="1" hotkey_6="1" hotkey_7="1" control_mode_0_label="Strafe" control_mode_1_label="Move" control_mode_2_label="Turn"><vp x="-1" y="1" z="-5"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots><trim_x_display text="0"/><trim_y_display text="0"/><trim_z_display text="0"/><trim_w_display text="0"/><axis_sensitivity x="0.58" y="0.55" z="1" w="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-5" y="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="2" y="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="3" y="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="1" y="1"/></o></c><c d="trans_angle"><o r="-1,0,0,0,1,0,0,0,-1" sc="2"><vp x="-7" y="5" z="10"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-6" y="5" z="10"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-5" y="5" z="10"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-4" y="5" z="10"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-3" y="5" z="10"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-2" y="5" z="10"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-1" y="5" z="10"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp y="5" z="10"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="1" y="5" z="10"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="2" y="5" z="10"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="3" y="5" z="10"/></o></c><c d="trans_block_t"><o r="0,-1,0,1,0,0,0,0,1" sc="6"><vp x="4" y="5" z="10"/></o></c><c d="trans_t"><o r="1,0,0,0,0,-1,0,1,0" sc="3"><vp x="5" y="5" z="10"/></o></c><c d="microprocessor"><o r="0,1,0,0,0,1,1,0,0" sc="46"><microprocessor_definition name="octave" description="No description set." width="5" length="3" id_counter="51" id_counter_node="15" sym5="16380" sym6="16252" sym7="16252" sym8="16252" sym9="8060" sym10="8004" sym11="8008" sym12="8055" sym13="35" sym14="29"><nodes><n id="3" component_id="12"><node label="C" description="The input signal to be processed."><position z="2"/></node></n><n id="4" component_id="13"><node label="C#" description="The input signal to be processed."><position x="1" z="2"/></node></n><n id="5" component_id="17"><node label="D" description="The input signal to be processed."><position x="2" z="2"/></node></n><n id="6" component_id="18"><node label="D#" description="The input signal to be processed."><position x="3" z="2"/></node></n><n id="7" component_id="19"><node label="E" description="The input signal to be processed."><position x="4" z="2"/></node></n><n id="8" component_id="33"><node label="F" description="The input signal to be processed."><position z="1"/></node></n><n id="9" component_id="32"><node label="F#" description="The input signal to be processed."><position x="1" z="1"/></node></n><n id="10" component_id="31"><node label="G" description="The input signal to be processed."><position x="2" z="1"/></node></n><n id="11" component_id="30"><node label="G#" description="The input signal to be processed."><position x="3" z="1"/></node></n><n id="12" component_id="29"><node label="A" description="The input signal to be processed."><position x="4" z="1"/></node></n><n id="13" component_id="28"><node label="A#" description="The input signal to be processed."/></n><n id="14" component_id="27"><node label="B" description="The input signal to be processed."><position x="1"/></node></n><n id="15" component_id="35"><node label="data" mode="1" type="5" description="The input signal to be processed."><position x="4"/></node></n></nodes><group><data type="-1634879488"><inputs/><outputs/></data><components><c type="29"><object id="36"><pos x="1.75" y="6.75"/><in1 component_id="48"/></object></c><c type="29"><object id="37" i="1"><pos x="1.75" y="6.25"/><in1 component_id="48"/></object></c><c type="29"><object id="38" i="2"><pos x="1.75" y="5.75"/><in1 component_id="48"/></object></c><c type="29"><object id="39" i="3"><pos x="1.75" y="5.25"/><in1 component_id="48"/></object></c><c type="29"><object id="40" i="4"><pos x="1.75" y="4.75"/><in1 component_id="48"/></object></c><c type="29"><object id="41" i="5"><pos x="1.75" y="4.25"/><in1 component_id="48"/></object></c><c type="29"><object id="42" i="6"><pos x="1.75" y="3.75"/><in1 component_id="48"/></object></c><c type="29"><object id="43" i="7"><pos x="1.75" y="3.25"/><in1 component_id="48"/></object></c><c type="29"><object id="44" i="8"><pos x="1.75" y="2.75"/><in1 component_id="48"/></object></c><c type="29"><object id="45" i="9"><pos x="1.75" y="2.25"/><in1 component_id="48"/></object></c><c type="29"><object id="46" i="10"><pos x="1.75" y="1.75"/><in1 component_id="48"/></object></c><c type="29"><object id="47" i="11"><pos x="1.75" y="1.25"/><in1 component_id="48"/></object></c><c type="56"><object id="48" script="function onTick()
+	octave = input.getNumber(32)
+	range = 12
+	start = (octave-2)*12
+	
+	outputs = {}
+	for i = 2,31 do
+		local note = input.getNumber(i)
+		local noteInRange = note-start
+		if noteInRange &gt; 0 and noteInRange &lt;= range then
+			outputs[noteInRange] = true
+		end
+	end
+	
+	for i = 1,12 do
+		output.setBool(i, outputs[i])
+	end
+end"><pos x="-0.5" y="4.75"/><in1 component_id="49"/></object></c><c type="40"><object id="49" count="1" offset="31"><pos x="-1.75" y="4.75"/><inc component_id="35"/><in1 component_id="51"/></object></c><c type="20"><object id="51" name="Octave" i="2"><pos x="-3" y="4.5"/><items><i l="C2"><v text="2" value="2"/></i><i l="C3"><v text="3" value="3"/></i><i l="C4"><v text="4" value="4"/></i><i l="C5"><v text="5" value="5"/></i><i l="C6"><v text="6" value="6"/></i></items></object></c></components><components_bridge><c type="1"><object id="12"><pos x="3" y="6.75"/><in1 component_id="36"/></object></c><c type="1"><object id="13"><pos x="3" y="6.25"/><in1 component_id="37"/></object></c><c type="1"><object id="17"><pos x="3" y="5.75"/><in1 component_id="38"/></object></c><c type="1"><object id="18"><pos x="3" y="5.25"/><in1 component_id="39"/></object></c><c type="1"><object id="19"><pos x="3" y="4.75"/><in1 component_id="40"/></object></c><c type="1"><object id="27"><pos x="3" y="1.25"/><in1 component_id="47"/></object></c><c type="1"><object id="28"><pos x="3" y="1.75"/><in1 component_id="46"/></object></c><c type="1"><object id="29"><pos x="3" y="2.25"/><in1 component_id="45"/></object></c><c type="1"><object id="30"><pos x="3" y="2.75"/><in1 component_id="44"/></object></c><c type="1"><object id="31"><pos x="3" y="3.25"/><in1 component_id="43"/></object></c><c type="1"><object id="32"><pos x="3" y="3.75"/><in1 component_id="42"/></object></c><c type="1"><object id="33"><pos x="3" y="4.25"/><in1 component_id="41"/></object></c><c type="4"><object id="35"><pos x="-3" y="5"/></object></c></components_bridge><groups/></group></microprocessor_definition><vp x="2" z="10"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_angle"><o r="-1,0,0,0,1,0,0,0,-1" sc="2"><vp x="-7" y="5" z="11"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-6" y="5" z="11"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-5" y="5" z="11"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-4" y="5" z="11"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-3" y="5" z="11"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-2" y="5" z="11"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-1" y="5" z="11"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp y="5" z="11"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="1" y="5" z="11"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="2" y="5" z="11"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="3" y="5" z="11"/></o></c><c d="trans_block_t"><o r="0,-1,0,1,0,0,0,0,1" sc="6"><vp x="4" y="5" z="11"/></o></c><c d="trans_t"><o r="1,0,0,0,0,-1,0,1,0" sc="3"><vp x="5" y="5" z="11"/></o></c><c d="microprocessor"><o r="0,1,0,0,0,1,1,0,0" sc="46"><microprocessor_definition name="octave" description="No description set." width="5" length="3" id_counter="51" id_counter_node="15" sym5="16380" sym6="16252" sym7="16252" sym8="16252" sym9="8060" sym10="8004" sym11="8008" sym12="8055" sym13="35" sym14="29"><nodes><n id="3" component_id="12"><node label="C" description="The input signal to be processed."><position z="2"/></node></n><n id="4" component_id="13"><node label="C#" description="The input signal to be processed."><position x="1" z="2"/></node></n><n id="5" component_id="17"><node label="D" description="The input signal to be processed."><position x="2" z="2"/></node></n><n id="6" component_id="18"><node label="D#" description="The input signal to be processed."><position x="3" z="2"/></node></n><n id="7" component_id="19"><node label="E" description="The input signal to be processed."><position x="4" z="2"/></node></n><n id="8" component_id="33"><node label="F" description="The input signal to be processed."><position z="1"/></node></n><n id="9" component_id="32"><node label="F#" description="The input signal to be processed."><position x="1" z="1"/></node></n><n id="10" component_id="31"><node label="G" description="The input signal to be processed."><position x="2" z="1"/></node></n><n id="11" component_id="30"><node label="G#" description="The input signal to be processed."><position x="3" z="1"/></node></n><n id="12" component_id="29"><node label="A" description="The input signal to be processed."><position x="4" z="1"/></node></n><n id="13" component_id="28"><node label="A#" description="The input signal to be processed."/></n><n id="14" component_id="27"><node label="B" description="The input signal to be processed."><position x="1"/></node></n><n id="15" component_id="35"><node label="data" mode="1" type="5" description="The input signal to be processed."><position x="4"/></node></n></nodes><group><data type="-1634879488"><inputs/><outputs/></data><components><c type="29"><object id="36"><pos x="1.75" y="6.75"/><in1 component_id="48"/></object></c><c type="29"><object id="37" i="1"><pos x="1.75" y="6.25"/><in1 component_id="48"/></object></c><c type="29"><object id="38" i="2"><pos x="1.75" y="5.75"/><in1 component_id="48"/></object></c><c type="29"><object id="39" i="3"><pos x="1.75" y="5.25"/><in1 component_id="48"/></object></c><c type="29"><object id="40" i="4"><pos x="1.75" y="4.75"/><in1 component_id="48"/></object></c><c type="29"><object id="41" i="5"><pos x="1.75" y="4.25"/><in1 component_id="48"/></object></c><c type="29"><object id="42" i="6"><pos x="1.75" y="3.75"/><in1 component_id="48"/></object></c><c type="29"><object id="43" i="7"><pos x="1.75" y="3.25"/><in1 component_id="48"/></object></c><c type="29"><object id="44" i="8"><pos x="1.75" y="2.75"/><in1 component_id="48"/></object></c><c type="29"><object id="45" i="9"><pos x="1.75" y="2.25"/><in1 component_id="48"/></object></c><c type="29"><object id="46" i="10"><pos x="1.75" y="1.75"/><in1 component_id="48"/></object></c><c type="29"><object id="47" i="11"><pos x="1.75" y="1.25"/><in1 component_id="48"/></object></c><c type="56"><object id="48" script="function onTick()
+	octave = input.getNumber(32)
+	range = 12
+	start = (octave-2)*12
+	
+	outputs = {}
+	for i = 2,31 do
+		local note = input.getNumber(i)
+		local noteInRange = note-start
+		if noteInRange &gt; 0 and noteInRange &lt;= range then
+			outputs[noteInRange] = true
+		end
+	end
+	
+	for i = 1,12 do
+		output.setBool(i, outputs[i])
+	end
+end"><pos x="-0.5" y="4.75"/><in1 component_id="49"/></object></c><c type="40"><object id="49" count="1" offset="31"><pos x="-1.75" y="4.75"/><inc component_id="35"/><in1 component_id="51"/></object></c><c type="20"><object id="51" name="Octave" i="1"><pos x="-3" y="4.5"/><items><i l="C2"><v text="2" value="2"/></i><i l="C3"><v text="3" value="3"/></i><i l="C4"><v text="4" value="4"/></i><i l="C5"><v text="5" value="5"/></i><i l="C6"><v text="6" value="6"/></i></items></object></c></components><components_bridge><c type="1"><object id="12"><pos x="3" y="6.75"/><in1 component_id="36"/></object></c><c type="1"><object id="13"><pos x="3" y="6.25"/><in1 component_id="37"/></object></c><c type="1"><object id="17"><pos x="3" y="5.75"/><in1 component_id="38"/></object></c><c type="1"><object id="18"><pos x="3" y="5.25"/><in1 component_id="39"/></object></c><c type="1"><object id="19"><pos x="3" y="4.75"/><in1 component_id="40"/></object></c><c type="1"><object id="27"><pos x="3" y="1.25"/><in1 component_id="47"/></object></c><c type="1"><object id="28"><pos x="3" y="1.75"/><in1 component_id="46"/></object></c><c type="1"><object id="29"><pos x="3" y="2.25"/><in1 component_id="45"/></object></c><c type="1"><object id="30"><pos x="3" y="2.75"/><in1 component_id="44"/></object></c><c type="1"><object id="31"><pos x="3" y="3.25"/><in1 component_id="43"/></object></c><c type="1"><object id="32"><pos x="3" y="3.75"/><in1 component_id="42"/></object></c><c type="1"><object id="33"><pos x="3" y="4.25"/><in1 component_id="41"/></object></c><c type="4"><object id="35"><pos x="-3" y="5"/></object></c></components_bridge><groups/></group></microprocessor_definition><vp x="2" z="11"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_angle"><o r="-1,0,0,0,1,0,0,0,-1" sc="2"><vp x="-7" y="5" z="12"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-6" y="5" z="12"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-5" y="5" z="12"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-4" y="5" z="12"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-3" y="5" z="12"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-2" y="5" z="12"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-1" y="5" z="12"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp y="5" z="12"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="1" y="5" z="12"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="2" y="5" z="12"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="3" y="5" z="12"/></o></c><c d="trans_block_t"><o r="0,-1,0,1,0,0,0,0,1" sc="6"><vp x="4" y="5" z="12"/></o></c><c d="microprocessor"><o r="0,1,0,0,0,1,1,0,0" sc="46"><microprocessor_definition name="octave" description="No description set." width="5" length="3" id_counter="51" id_counter_node="15" sym5="16380" sym6="16252" sym7="16252" sym8="16252" sym9="8060" sym10="8004" sym11="8008" sym12="8055" sym13="35" sym14="29"><nodes><n id="3" component_id="12"><node label="C" description="The input signal to be processed."><position z="2"/></node></n><n id="4" component_id="13"><node label="C#" description="The input signal to be processed."><position x="1" z="2"/></node></n><n id="5" component_id="17"><node label="D" description="The input signal to be processed."><position x="2" z="2"/></node></n><n id="6" component_id="18"><node label="D#" description="The input signal to be processed."><position x="3" z="2"/></node></n><n id="7" component_id="19"><node label="E" description="The input signal to be processed."><position x="4" z="2"/></node></n><n id="8" component_id="33"><node label="F" description="The input signal to be processed."><position z="1"/></node></n><n id="9" component_id="32"><node label="F#" description="The input signal to be processed."><position x="1" z="1"/></node></n><n id="10" component_id="31"><node label="G" description="The input signal to be processed."><position x="2" z="1"/></node></n><n id="11" component_id="30"><node label="G#" description="The input signal to be processed."><position x="3" z="1"/></node></n><n id="12" component_id="29"><node label="A" description="The input signal to be processed."><position x="4" z="1"/></node></n><n id="13" component_id="28"><node label="A#" description="The input signal to be processed."/></n><n id="14" component_id="27"><node label="B" description="The input signal to be processed."><position x="1"/></node></n><n id="15" component_id="35"><node label="data" mode="1" type="5" description="The input signal to be processed."><position x="4"/></node></n></nodes><group><data type="-1634879488"><inputs/><outputs/></data><components><c type="29"><object id="36"><pos x="1.75" y="6.75"/><in1 component_id="48"/></object></c><c type="29"><object id="37" i="1"><pos x="1.75" y="6.25"/><in1 component_id="48"/></object></c><c type="29"><object id="38" i="2"><pos x="1.75" y="5.75"/><in1 component_id="48"/></object></c><c type="29"><object id="39" i="3"><pos x="1.75" y="5.25"/><in1 component_id="48"/></object></c><c type="29"><object id="40" i="4"><pos x="1.75" y="4.75"/><in1 component_id="48"/></object></c><c type="29"><object id="41" i="5"><pos x="1.75" y="4.25"/><in1 component_id="48"/></object></c><c type="29"><object id="42" i="6"><pos x="1.75" y="3.75"/><in1 component_id="48"/></object></c><c type="29"><object id="43" i="7"><pos x="1.75" y="3.25"/><in1 component_id="48"/></object></c><c type="29"><object id="44" i="8"><pos x="1.75" y="2.75"/><in1 component_id="48"/></object></c><c type="29"><object id="45" i="9"><pos x="1.75" y="2.25"/><in1 component_id="48"/></object></c><c type="29"><object id="46" i="10"><pos x="1.75" y="1.75"/><in1 component_id="48"/></object></c><c type="29"><object id="47" i="11"><pos x="1.75" y="1.25"/><in1 component_id="48"/></object></c><c type="56"><object id="48" script="function onTick()
+	octave = input.getNumber(32)
+	range = 12
+	start = (octave-2)*12
+	
+	outputs = {}
+	for i = 2,31 do
+		local note = input.getNumber(i)
+		local noteInRange = note-start
+		if noteInRange &gt; 0 and noteInRange &lt;= range then
+			outputs[noteInRange] = true
+		end
+	end
+	
+	for i = 1,12 do
+		output.setBool(i, outputs[i])
+	end
+end"><pos x="-0.5" y="4.75"/><in1 component_id="49"/></object></c><c type="40"><object id="49" count="1" offset="31"><pos x="-1.75" y="4.75"/><inc component_id="35"/><in1 component_id="51"/></object></c><c type="20"><object id="51" name="Octave"><pos x="-3" y="4.5"/><items><i l="C2"><v text="2" value="2"/></i><i l="C3"><v text="3" value="3"/></i><i l="C4"><v text="4" value="4"/></i><i l="C5"><v text="5" value="5"/></i><i l="C6"><v text="6" value="6"/></i></items></object></c></components><components_bridge><c type="1"><object id="12"><pos x="3" y="6.75"/><in1 component_id="36"/></object></c><c type="1"><object id="13"><pos x="3" y="6.25"/><in1 component_id="37"/></object></c><c type="1"><object id="17"><pos x="3" y="5.75"/><in1 component_id="38"/></object></c><c type="1"><object id="18"><pos x="3" y="5.25"/><in1 component_id="39"/></object></c><c type="1"><object id="19"><pos x="3" y="4.75"/><in1 component_id="40"/></object></c><c type="1"><object id="27"><pos x="3" y="1.25"/><in1 component_id="47"/></object></c><c type="1"><object id="28"><pos x="3" y="1.75"/><in1 component_id="46"/></object></c><c type="1"><object id="29"><pos x="3" y="2.25"/><in1 component_id="45"/></object></c><c type="1"><object id="30"><pos x="3" y="2.75"/><in1 component_id="44"/></object></c><c type="1"><object id="31"><pos x="3" y="3.25"/><in1 component_id="43"/></object></c><c type="1"><object id="32"><pos x="3" y="3.75"/><in1 component_id="42"/></object></c><c type="1"><object id="33"><pos x="3" y="4.25"/><in1 component_id="41"/></object></c><c type="4"><object id="35"><pos x="-3" y="5"/></object></c></components_bridge><groups/></group></microprocessor_definition><vp x="2" z="12"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_angle"><o r="-1,0,0,0,1,0,0,0,-1" sc="2"><vp x="-7" y="5" z="9"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-6" y="5" z="9"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-5" y="5" z="9"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-4" y="5" z="9"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-3" y="5" z="9"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-2" y="5" z="9"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-1" y="5" z="9"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp y="5" z="9"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="1" y="5" z="9"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="2" y="5" z="9"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="3" y="5" z="9"/></o></c><c d="trans_block_t"><o r="0,-1,0,1,0,0,0,0,1" sc="6"><vp x="4" y="5" z="9"/></o></c><c d="trans_t"><o r="1,0,0,0,0,-1,0,1,0" sc="3"><vp x="5" y="5" z="9"/></o></c><c d="microprocessor"><o r="0,1,0,0,0,1,1,0,0" sc="46"><microprocessor_definition name="octave" description="No description set." width="5" length="3" id_counter="51" id_counter_node="15" sym5="16380" sym6="16252" sym7="16252" sym8="16252" sym9="8060" sym10="8004" sym11="8008" sym12="8055" sym13="35" sym14="29"><nodes><n id="3" component_id="12"><node label="C" description="The input signal to be processed."><position z="2"/></node></n><n id="4" component_id="13"><node label="C#" description="The input signal to be processed."><position x="1" z="2"/></node></n><n id="5" component_id="17"><node label="D" description="The input signal to be processed."><position x="2" z="2"/></node></n><n id="6" component_id="18"><node label="D#" description="The input signal to be processed."><position x="3" z="2"/></node></n><n id="7" component_id="19"><node label="E" description="The input signal to be processed."><position x="4" z="2"/></node></n><n id="8" component_id="33"><node label="F" description="The input signal to be processed."><position z="1"/></node></n><n id="9" component_id="32"><node label="F#" description="The input signal to be processed."><position x="1" z="1"/></node></n><n id="10" component_id="31"><node label="G" description="The input signal to be processed."><position x="2" z="1"/></node></n><n id="11" component_id="30"><node label="G#" description="The input signal to be processed."><position x="3" z="1"/></node></n><n id="12" component_id="29"><node label="A" description="The input signal to be processed."><position x="4" z="1"/></node></n><n id="13" component_id="28"><node label="A#" description="The input signal to be processed."/></n><n id="14" component_id="27"><node label="B" description="The input signal to be processed."><position x="1"/></node></n><n id="15" component_id="35"><node label="data" mode="1" type="5" description="The input signal to be processed."><position x="4"/></node></n></nodes><group><data type="-1634879488"><inputs/><outputs/></data><components><c type="29"><object id="36"><pos x="1.75" y="6.75"/><in1 component_id="48"/></object></c><c type="29"><object id="37" i="1"><pos x="1.75" y="6.25"/><in1 component_id="48"/></object></c><c type="29"><object id="38" i="2"><pos x="1.75" y="5.75"/><in1 component_id="48"/></object></c><c type="29"><object id="39" i="3"><pos x="1.75" y="5.25"/><in1 component_id="48"/></object></c><c type="29"><object id="40" i="4"><pos x="1.75" y="4.75"/><in1 component_id="48"/></object></c><c type="29"><object id="41" i="5"><pos x="1.75" y="4.25"/><in1 component_id="48"/></object></c><c type="29"><object id="42" i="6"><pos x="1.75" y="3.75"/><in1 component_id="48"/></object></c><c type="29"><object id="43" i="7"><pos x="1.75" y="3.25"/><in1 component_id="48"/></object></c><c type="29"><object id="44" i="8"><pos x="1.75" y="2.75"/><in1 component_id="48"/></object></c><c type="29"><object id="45" i="9"><pos x="1.75" y="2.25"/><in1 component_id="48"/></object></c><c type="29"><object id="46" i="10"><pos x="1.75" y="1.75"/><in1 component_id="48"/></object></c><c type="29"><object id="47" i="11"><pos x="1.75" y="1.25"/><in1 component_id="48"/></object></c><c type="56"><object id="48" script="function onTick()
+	octave = input.getNumber(32)
+	range = 12
+	start = (octave-2)*12
+	
+	outputs = {}
+	for i = 2,31 do
+		local note = input.getNumber(i)
+		local noteInRange = note-start
+		if noteInRange &gt; 0 and noteInRange &lt;= range then
+			outputs[noteInRange] = true
+		end
+	end
+	
+	for i = 1,12 do
+		output.setBool(i, outputs[i])
+	end
+end"><pos x="-0.5" y="4.75"/><in1 component_id="49"/></object></c><c type="40"><object id="49" count="1" offset="31"><pos x="-1.75" y="4.75"/><inc component_id="35"/><in1 component_id="51"/></object></c><c type="20"><object id="51" name="Octave" i="3"><pos x="-3" y="4.5"/><items><i l="C2"><v text="2" value="2"/></i><i l="C3"><v text="3" value="3"/></i><i l="C4"><v text="4" value="4"/></i><i l="C5"><v text="5" value="5"/></i><i l="C6"><v text="6" value="6"/></i></items></object></c></components><components_bridge><c type="1"><object id="12"><pos x="3" y="6.75"/><in1 component_id="36"/></object></c><c type="1"><object id="13"><pos x="3" y="6.25"/><in1 component_id="37"/></object></c><c type="1"><object id="17"><pos x="3" y="5.75"/><in1 component_id="38"/></object></c><c type="1"><object id="18"><pos x="3" y="5.25"/><in1 component_id="39"/></object></c><c type="1"><object id="19"><pos x="3" y="4.75"/><in1 component_id="40"/></object></c><c type="1"><object id="27"><pos x="3" y="1.25"/><in1 component_id="47"/></object></c><c type="1"><object id="28"><pos x="3" y="1.75"/><in1 component_id="46"/></object></c><c type="1"><object id="29"><pos x="3" y="2.25"/><in1 component_id="45"/></object></c><c type="1"><object id="30"><pos x="3" y="2.75"/><in1 component_id="44"/></object></c><c type="1"><object id="31"><pos x="3" y="3.25"/><in1 component_id="43"/></object></c><c type="1"><object id="32"><pos x="3" y="3.75"/><in1 component_id="42"/></object></c><c type="1"><object id="33"><pos x="3" y="4.25"/><in1 component_id="41"/></object></c><c type="4"><object id="35"><pos x="-3" y="5"/></object></c></components_bridge><groups/></group></microprocessor_definition><vp x="2" z="9"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="3.82423"><vp x="-2" y="7" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="4.05163"><vp x="-3" y="7" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="4.29256"><vp x="-4" y="7" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="4.5478"><vp x="-5" y="7" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="4.81823"><vp x="-6" y="7" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="5.10474"><vp x="-7" y="7" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_angle"><o r="-1,0,0,0,1,0,0,0,-1" sc="2"><vp x="-7" y="5" z="8"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-6" y="5" z="8"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-5" y="5" z="8"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-4" y="5" z="8"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-3" y="5" z="8"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-2" y="5" z="8"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="-1" y="5" z="8"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp y="5" z="8"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="1" y="5" z="8"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="2" y="5" z="8"/></o></c><c d="trans_t"><o r="0,-1,0,1,0,0,0,0,1" sc="3"><vp x="3" y="5" z="8"/></o></c><c d="trans_block_t"><o r="0,-1,0,1,0,0,0,0,1" sc="6"><vp x="4" y="5" z="8"/></o></c><c d="trans_t"><o r="1,0,0,0,0,-1,0,1,0" sc="3"><vp x="5" y="5" z="8"/></o></c><c d="microprocessor"><o r="0,1,0,0,0,1,1,0,0" sc="46"><microprocessor_definition name="octave" description="No description set." width="5" length="3" id_counter="51" id_counter_node="15" sym5="16380" sym6="16252" sym7="16252" sym8="16252" sym9="8060" sym10="8004" sym11="8008" sym12="8055" sym13="35" sym14="29"><nodes><n id="3" component_id="12"><node label="C" description="The input signal to be processed."><position z="2"/></node></n><n id="4" component_id="13"><node label="C#" description="The input signal to be processed."><position x="1" z="2"/></node></n><n id="5" component_id="17"><node label="D" description="The input signal to be processed."><position x="2" z="2"/></node></n><n id="6" component_id="18"><node label="D#" description="The input signal to be processed."><position x="3" z="2"/></node></n><n id="7" component_id="19"><node label="E" description="The input signal to be processed."><position x="4" z="2"/></node></n><n id="8" component_id="33"><node label="F" description="The input signal to be processed."><position z="1"/></node></n><n id="9" component_id="32"><node label="F#" description="The input signal to be processed."><position x="1" z="1"/></node></n><n id="10" component_id="31"><node label="G" description="The input signal to be processed."><position x="2" z="1"/></node></n><n id="11" component_id="30"><node label="G#" description="The input signal to be processed."><position x="3" z="1"/></node></n><n id="12" component_id="29"><node label="A" description="The input signal to be processed."><position x="4" z="1"/></node></n><n id="13" component_id="28"><node label="A#" description="The input signal to be processed."/></n><n id="14" component_id="27"><node label="B" description="The input signal to be processed."><position x="1"/></node></n><n id="15" component_id="35"><node label="data" mode="1" type="5" description="The input signal to be processed."><position x="4"/></node></n></nodes><group><data type="-1634879488"><inputs/><outputs/></data><components><c type="29"><object id="36"><pos x="1.75" y="6.75"/><in1 component_id="48"/></object></c><c type="29"><object id="37" i="1"><pos x="1.75" y="6.25"/><in1 component_id="48"/></object></c><c type="29"><object id="38" i="2"><pos x="1.75" y="5.75"/><in1 component_id="48"/></object></c><c type="29"><object id="39" i="3"><pos x="1.75" y="5.25"/><in1 component_id="48"/></object></c><c type="29"><object id="40" i="4"><pos x="1.75" y="4.75"/><in1 component_id="48"/></object></c><c type="29"><object id="41" i="5"><pos x="1.75" y="4.25"/><in1 component_id="48"/></object></c><c type="29"><object id="42" i="6"><pos x="1.75" y="3.75"/><in1 component_id="48"/></object></c><c type="29"><object id="43" i="7"><pos x="1.75" y="3.25"/><in1 component_id="48"/></object></c><c type="29"><object id="44" i="8"><pos x="1.75" y="2.75"/><in1 component_id="48"/></object></c><c type="29"><object id="45" i="9"><pos x="1.75" y="2.25"/><in1 component_id="48"/></object></c><c type="29"><object id="46" i="10"><pos x="1.75" y="1.75"/><in1 component_id="48"/></object></c><c type="29"><object id="47" i="11"><pos x="1.75" y="1.25"/><in1 component_id="48"/></object></c><c type="56"><object id="48" script="function onTick()
+	octave = input.getNumber(32)
+	range = 12
+	start = (octave-2)*12
+	
+	outputs = {}
+	for i = 2,31 do
+		local note = input.getNumber(i)
+		local noteInRange = note-start
+		if noteInRange &gt; 0 and noteInRange &lt;= range then
+			outputs[noteInRange] = true
+		end
+	end
+	
+	for i = 1,12 do
+		output.setBool(i, outputs[i])
+	end
+end"><pos x="-0.5" y="4.75"/><in1 component_id="49"/></object></c><c type="40"><object id="49" count="1" offset="31"><pos x="-1.75" y="4.75"/><inc component_id="35"/><in1 component_id="51"/></object></c><c type="20"><object id="51" name="Octave" i="4"><pos x="-3" y="4.5"/><items><i l="C2"><v text="2" value="2"/></i><i l="C3"><v text="3" value="3"/></i><i l="C4"><v text="4" value="4"/></i><i l="C5"><v text="5" value="5"/></i><i l="C6"><v text="6" value="6"/></i></items></object></c></components><components_bridge><c type="1"><object id="12"><pos x="3" y="6.75"/><in1 component_id="36"/></object></c><c type="1"><object id="13"><pos x="3" y="6.25"/><in1 component_id="37"/></object></c><c type="1"><object id="17"><pos x="3" y="5.75"/><in1 component_id="38"/></object></c><c type="1"><object id="18"><pos x="3" y="5.25"/><in1 component_id="39"/></object></c><c type="1"><object id="19"><pos x="3" y="4.75"/><in1 component_id="40"/></object></c><c type="1"><object id="27"><pos x="3" y="1.25"/><in1 component_id="47"/></object></c><c type="1"><object id="28"><pos x="3" y="1.75"/><in1 component_id="46"/></object></c><c type="1"><object id="29"><pos x="3" y="2.25"/><in1 component_id="45"/></object></c><c type="1"><object id="30"><pos x="3" y="2.75"/><in1 component_id="44"/></object></c><c type="1"><object id="31"><pos x="3" y="3.25"/><in1 component_id="43"/></object></c><c type="1"><object id="32"><pos x="3" y="3.75"/><in1 component_id="42"/></object></c><c type="1"><object id="33"><pos x="3" y="4.25"/><in1 component_id="41"/></object></c><c type="4"><object id="35"><pos x="-3" y="5"/></object></c></components_bridge><groups/></group></microprocessor_definition><vp x="2" z="8"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="fluid_pressure"><o r="0,-1,0,-1,0,0,0,0,-1" sc="6" fluid_filter="4294967295"><vp x="4" y="5" z="7"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="gate_float_threshold"><o r="0,0,-1,-1,0,0,0,1,0" sc="2" timer_scalar_1="0.183" timer_scalar_2="0.183"><vp x="1" y="1" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots><property_output_float_val text="0"/><min_threshold text="1" value="1"/><max_threshold text="999" value="999"/><pid_controller_ki text="1" value="1"/><pid_controller_kp text="1" value="1"/><pid_controller_kd text="1" value="1"/><pid_controller_max_error text="0"/><exp text="2" value="2"/><min_lever_value text="-1" value="-1"/><max_lever_value text="1" value="1"/><starting_lever_value text="0"/></o></c><c d="gate_bool_capacitor"><o r="0,0,-1,-1,0,0,0,1,0" sc="2" timer_scalar_2="0.6"><vp x="1" y="3" z="8"/><logic_slots><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots><property_output_float_val text="0"/><min_threshold text="0"/><max_threshold text="0"/><pid_controller_ki text="1" value="1"/><pid_controller_kp text="1" value="1"/><pid_controller_kd text="1" value="1"/><pid_controller_max_error text="0"/><exp text="2" value="2"/><min_lever_value text="-1" value="-1"/><max_lever_value text="1" value="1"/><starting_lever_value text="0"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="7" z="9"/></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.91212"><vp x="-2" y="9" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="2.02582"><vp x="-3" y="9" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="2.14628"><vp x="-4" y="9" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="2.2739"><vp x="-5" y="9" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="2.40912"><vp x="-6" y="9" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="2.55237"><vp x="-7" y="9" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="9" z="10"/></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.95606"><vp x="-2" y="11" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.01291"><vp x="-3" y="11" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.07314"><vp x="-4" y="11" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.13695"><vp x="-5" y="11" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.20456"><vp x="-6" y="11" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.27618"><vp x="-7" y="11" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="11" z="11"/></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.47803"><vp x="-2" y="13" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.50645"><vp x="-3" y="13" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.53657"><vp x="-4" y="13" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.56848"><vp x="-5" y="13" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.60228"><vp x="-6" y="13" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.63809"><vp x="-7" y="13" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-7" y="13" z="12"/></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.23901"><vp x="-2" y="15" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.25323"><vp x="-3" y="15" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.26828"><vp x="-4" y="15" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.28424"><vp x="-5" y="15" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.30114"><vp x="-6" y="15" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.31905"><vp x="-7" y="15" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="6" z="8"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="6" z="8"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="6" z="8"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="6" z="8"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="6" z="8"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="6" z="8"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="6" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="7" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="6" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="7" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="8" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="9" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="10" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="10" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="10" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="10" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="10" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="10" z="10"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="6" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="6" z="11"/></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="2.70414"><vp x="4" y="8" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="2.86494"><vp x="3" y="8" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="3.03529"><vp x="2" y="8" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="3.21578"><vp x="1" y="8" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="3.407"><vp y="8" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="3.60959"><vp x="-1" y="8" z="8"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="7" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="8" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="9" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="10" z="12"/></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.35207"><vp x="4" y="10" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.43247"><vp x="3" y="10" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.51765"><vp x="2" y="10" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.60789"><vp x="1" y="10" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.7035"><vp y="10" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="1.8048"><vp x="-1" y="10" z="9"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.67604"><vp x="4" y="12" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.71623"><vp x="3" y="12" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.75882"><vp x="2" y="12" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.80395"><vp x="1" y="12" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.85175"><vp y="12" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.9024"><vp x="-1" y="12" z="10"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.33802"><vp x="4" y="14" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.35812"><vp x="3" y="14" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.37941"><vp x="2" y="14" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.40197"><vp x="1" y="14" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.42588"><vp y="14" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.4512"><vp x="-1" y="14" z="11"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.16901"><vp x="4" y="16" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.17906"><vp x="3" y="16" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.18971"><vp x="2" y="16" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.20099"><vp x="1" y="16" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.21294"><vp y="16" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="steam_whistle"><o r="0,0,-1,0,1,0,1,0,0" sc="1" fluid_filter="4294967295" audio_base_pitch="0.2256"><vp x="-1" y="16" z="12"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="8" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="8" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="8" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="8" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="8" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="8" z="9"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="6" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="7" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="8" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="9" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="10" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="12" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="12" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="12" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="12" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="12" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="12" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="11" z="11"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="10" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="11" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="12" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-6" y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-5" y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-4" y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-3" y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-2" y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="13" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="-1" y="14" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp y="14" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="1" y="14" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="2" y="14" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="3" y="14" z="12"/></o></c><c d="trans_straight"><o r="0,-1,0,-1,0,0,0,0,-1" sc="2"><vp x="4" y="14" z="12"/></o></c><c><o r="-1,0,0,0,1,0,0,0,-1" sc="6"><vp x="1" z="8"/></o></c><c><o r="-1,0,0,0,1,0,0,0,-1" sc="6"><vp z="8"/></o></c><c><o r="-1,0,0,0,1,0,0,0,-1" sc="6,x,x,141414,x,x,x"><vp x="-1" z="8"/></o></c><c><o r="-1,0,0,0,1,0,0,0,-1" sc="6,x,x,141414,x,x,x"><vp x="-2" z="8"/></o></c><c><o r="-1,0,0,0,1,0,0,0,-1" sc="6,x,x,141414,x,x,x"><vp x="-3" z="8"/></o></c><c><o r="-1,0,0,0,1,0,0,0,-1" sc="6"><vp x="-4" z="8"/></o></c><c><o r="-1,0,0,0,1,0,0,0,-1" sc="6"><vp x="-5" z="8"/></o></c><c><o r="-1,0,0,0,1,0,0,0,-1" sc="6"><vp x="-6" z="8"/></o></c><c d="fluid_tank_compressed_gas_5_9"><o r="-1,0,0,0,-1,0,0,0,1" sc="230" fluid_type="7" fluid_filter="4294967295" fluid_fill="0.96"><vp x="1" y="4" z="15"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="fluid_tank_compressed_gas_5_9"><o r="-1,0,0,0,-1,0,0,0,1" sc="230" fluid_type="7" fluid_filter="4294967295" fluid_fill="0.96"><vp x="-4" y="4" z="15"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_angle"><o r="0,0,-1,-1,0,0,0,1,0" sc="2"><vp x="5" y="5" z="7"/></o></c><c d="trans_t"><o r="0,1,0,1,0,0,0,0,-1" sc="3"><vp x="1" y="9" z="15"/></o></c><c d="trans_straight"><o r="1,0,0,0,1,0,0,0,1" sc="2"><vp x="2" y="9" z="15"/></o></c><c d="trans_straight"><o r="1,0,0,0,1,0,0,0,1" sc="2"><vp y="9" z="15"/></o></c><c d="trans_straight"><o r="1,0,0,0,1,0,0,0,1" sc="2"><vp x="-1" y="9" z="15"/></o></c><c d="trans_straight"><o r="1,0,0,0,1,0,0,0,1" sc="2"><vp x="-2" y="9" z="15"/></o></c><c d="trans_straight"><o r="1,0,0,0,1,0,0,0,1" sc="2"><vp x="-3" y="9" z="15"/></o></c><c d="trans_angle"><o r="-1,0,0,0,-1,0,0,0,1" sc="2"><vp x="-4" y="9" z="15"/></o></c><c d="trans_straight"><o r="0,1,0,1,0,0,0,0,-1" sc="2"><vp x="5" y="8" z="15"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" y="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" y="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" y="1"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-3" z="9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-2" z="9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-1" z="9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-1" z="10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-2" z="10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-3" z="10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,141414,x,x,x,x,x"><vp x="-3" y="1" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,141414,x,x,x,x,x"><vp x="-2" y="1" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,141414,x,x,x,x,x"><vp x="-1" y="1" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,x,x,141414,x"><vp y="1" z="8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,x,x,141414,x"><vp y="1" z="9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,x,x,141414,x"><vp y="1" z="10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="1" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,141414,x,x,x,x"><vp x="-1" y="1" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,141414,x,x,x,x"><vp x="-2" y="1" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,141414,x,x,x,x"><vp x="-3" y="1" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" y="1" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,x,x,x,141414"><vp x="-4" y="1" z="8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,x,x,x,141414"><vp x="-4" y="1" z="9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6,x,x,x,x,x,141414"><vp x="-4" y="1" z="10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" y="1" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="1" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" y="2" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" y="2" z="8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" y="2" z="9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" y="2" z="10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-4" y="2" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" y="2" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-3" y="2" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" y="2" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-2" y="2" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" y="2" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp x="-1" y="2" z="11"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="2" z="7"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="2" z="8"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="2" z="9"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="2" z="10"/></o></c><c><o r="1,0,0,0,1,0,0,0,1" sc="6"><vp y="2" z="11"/></o></c><c><o r="1,0,0,0,-1,0,0,0,-1" sc="6,x,x,141414,x,x,x"><vp x="-3" y="2" z="8"/></o></c><c><o r="1,0,0,0,-1,0,0,0,-1" sc="6,x,x,141414,x,x,x"><vp x="-2" y="2" z="8"/></o></c><c><o r="1,0,0,0,-1,0,0,0,-1" sc="6,x,x,141414,x,x,x"><vp x="-1" y="2" z="8"/></o></c><c><o r="-1,0,0,0,-1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-1" y="2" z="9"/></o></c><c><o r="-1,0,0,0,-1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-3" y="2" z="9"/></o></c><c><o r="-1,0,0,0,-1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-3" y="2" z="10"/></o></c><c><o r="-1,0,0,0,-1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-2" y="2" z="10"/></o></c><c><o r="-1,0,0,0,-1,0,0,0,1" sc="6,x,x,141414,x,x,x"><vp x="-1" y="2" z="10"/></o></c><c d="camera_small"><o r="-1,0,0,0,-1,0,0,0,1" bc="141414" bc2="FFFFFF" bc3="FFFFFF" sc="5,x,x,x,x,x"><vp x="-2" y="2" z="9"/><logic_slots><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="microprocessor"><o r="1,0,0,0,1,0,0,0,1" sc="28"><microprocessor_definition name="Disp Test" description="No description set." width="4" length="2" id_counter="142" id_counter_node="10"><nodes><n id="1" component_id="3"><node label="Diplay" type="6"/></n><n id="3" component_id="88"><node label="Seat" mode="1" type="5"><position x="1" z="1"/></node></n><n id="5" component_id="126"><node label="Viewing Scope Occupied" mode="1"><position x="2"/></node></n><n id="6" component_id="129"><node label="Viewing Scope" type="6"><position x="1"/></node></n><n id="9" component_id="138"><node label="Camera Input" mode="1" type="6"><position z="1"/></node></n><n id="10" component_id="142"><node label="Sound Output" type="5"><position x="2" z="1"/></node></n></nodes><group><data><inputs/><outputs/></data><components><c type="56"><object id="4" script='E=math
+B=E.max
+K=E.min
+G=E.abs
+aF=E.floor
+ce=E.sqrt
+am=input.getNumber
+bp=input.getBool
+aD=E.pi
+L=false
+T=true
+function bs(d,C)return d[1]*C[2]-d[2]*C[1]end
+function av(d,C)return{(d[1]-C[1]),(d[2]-C[2])}end
+function bc(d)return ((d+180)%360)-180 end
+function ae(d)return E.cos(d/180*aD)end
+function au(d)return E.tan(d/180*aD)end
+function cp(d)return E.atan(d)*180/aD end
+function bx(d)return E.atan(d[2],d[1])*180/aD end
+function bv(d,C,co)return K(B(C,d),co)end
+function ax(d)return aF(d+0.5)end
+function br(d,C)return ce(((d[1]-C[1])^2)+((d[2]-C[2])^2))end
+function bI(d)
+d=d-1
+d=d|(d&gt;&gt;1)
+d=d|(d&gt;&gt;2)
+d=d|(d&gt;&gt;4)
+return d+1
+end
+c={}
+aS=1
+bl=3
+ak=L
+al=T
+k={{0,0},0,0}
+J=288
+t=J//2
+P=128
+X=P//2
+aO={}
+cb=400
+cd=400
+ac=100
+aL=0
+az=0
+bi=0
+at={}
+bE={1,1}
+aM=0
+aC=1.2
+Q=105//2
+an=au(Q)
+bd=X*aC*J/P/an
+_=1
+bC={}
+for b=-t,t do bC[b]=cp(b/t*an)end
+function bf(b)
+if b&lt;32768then
+local v,bg=c[7][b]
+bg=bs({v[3],v[4]},av(k[1],v))&gt;0 and 8 or 7
+bf(v[bg])
+bf(v[15-bg])
+else
+aw[#aw+1]=b-32768
+end
+end
+function aV(b,d)
+if b&lt;32768then
+v=c[7][b]
+return aV(v[bs({v[3],v[4]},av(d,v))&gt;0 and 8 or 7],d)
+else
+return b-32768
+end
+end
+function bq(d)
+local v=c[5][c[6][d][2]]
+return c[3][c[2][v[4]][v[5]+6]][6]
+end
+function onTick()
+bj=0
+for n=1,4 do
+if bp(9) and (not ak)or not c[21]then
+bh=property.getText(aS.."")
+if bh~="" then
+b=1
+A=""
+a=string.sub(bh,b,b)
+while a~=""or A~=""do
+if a==","or a==""then
+A=A+0
+if _==1 then
+bT=A
+if c[A]==nil then
+c[A]={}
+end
+_=2
+elseif _==2 then
+cj=A
+aI=0
+_=3
+elseif _==3 then
+bu=A
+_=4
+else
+if aI==0 then
+aI=cj
+bu=bu-1
+ap={}
+c[bT][#c[bT]+1]=ap
+end
+ap[#ap+1]=A
+aI=aI-1
+if B(aI,bu)==0 then
+_=1
+end
+end
+A=""
+else
+A=A.. a
+end
+b=b+1
+a=string.sub(bh,b,b)
+end
+aS=aS+1
+else
+ak=T
+end
+end
+end
+if ak then
+al=al or bp(2)
+
+
+
+if ac&gt;0 and not al then
+ah={}
+at[#at+1]=ah
+aA=3
+a=am(aA)
+while a~=0 do
+o={}
+ah[#ah+1]=o
+for b=0,8 do
+o[b+1]=am(aA+b)
+end
+aA=aA+9
+a=am(aA)
+end
+end
+
+if bp(1) then
+as=am(1)
+az=B(az-8,0)
+az=K(az+(ac-am(2))*3,255)
+ac=am(2)
+aM=aM+1
+if al then
+for b=1,10 do
+c[b]=c[b+10*bl]
+end
+bl=bl+1
+end
+aL=B(aL-1,0)
+
+
+for b=1,#at do
+ah=at[b]
+for n=1,#ah do
+o=ah[n]
+a=o[1]
+if a&gt;(2^15) then
+a=c[8][a-(2^15)]
+a[1]=o[2]
+a[2]=o[3]
+elseif a&lt;0 then
+o=c[1][-a][6]
+if c[16][o][5]&gt;0 then
+aL=10
+end
+table.remove(c[1],-a)
+else
+if c[1][a]==nil then
+c[1][a]={}
+end
+a=c[1][a]
+a[1]=o[2]
+a[2]=o[3]
+a[9]=o[4]
+a[6]=o[5]
+a[15]=0
+a[11]=o[6]
+a[12]=o[7]
+a[19]=o[8]
+a[3]=o[9]
+a[7]=aV(#c[7],a)
+a[8]=bq(a[7])
+end
+end
+end
+at={}
+
+for b=1,#c[6]do
+aO[b]={}
+end
+for b=1,#c[1] do
+a=c[1][b]
+
+if a then
+if al then
+a[7]=aV(#c[7],a)
+a[8]=bq(a[7])
+a[9]=c[8][a[8]][1]
+a[11]=0
+a[12]=0
+a[15]=0
+a[19]=0
+if a[4]==1 then
+cg=b
+end
+end
+bt=0
+for n,f in ipairs({1,2,9}) do
+a[f]=a[f]+a[f+10]
+bt=B(bt,a[f+10])
+end
+if bt&gt;0 then
+a[7]=aV(#c[7],a)
+a[8]=bq(a[7])
+end
+
+a[15]=a[15]+1
+a[20]=br(a,k[1])
+U=c[16][a[6]]
+if U~=nil then
+if a[15]&gt;=U[2] and U[2]~=-1 then
+a[6]=U[4]
+a[15]=0
+end
+end
+aO[a[7]][#aO[a[7]]+1]=b
+end
+
+end
+
+
+al=L
+aY=c[1][cg]
+k[1]={aY[1],aY[2]}
+k[2]=aY[9]+41
+k[3]=aY[3]
+aw = {}
+
+bf(#c[7])
+aW={}
+q={}
+ag={}
+af={}
+ad={}
+aN={}
+bk=J
+for b=0,J-1 do
+aW[b],af[b],ad[b]=#c[6]+2,X+1,-X
+end
+b=1
+while b&lt;=#aw and bk&gt;0 do
+a=c[6][aw[b]]
+ag[b]={}
+q[b]={}
+aN[b]=aO[aw[b]]
+table.sort(aN[b],function(d,C)return c[1][d][20]&gt;c[1][C][20]end)
+
+for n=a[2],a[1]+a[2]-1 do
+aj=c[5][n]
+O=c[2][aj[4]]
+bO,bN=c[4][aj[1]],c[4][aj[2]]
+aT,bL=av(bO,k[1]),av(bN,k[1])
+bQ,ck=bx(aT),bx(bL)
+M,ba=bc(bQ-k[3]),bc(ck-k[3])
+ar,aq=bv(M,-Q,Q),bv(ba,-Q,Q)
+if G(M)&lt;90 or G(ba)&lt;90 then
+if G(M)&gt;=90 or G(ba)&gt;=90 then
+bK=bs(aT,bL)
+if G(M)&gt;=90 then
+if bK&gt;0 then ar=-Q else ar=Q end
+else
+if bK&lt;0 then aq=-Q else aq=Q end
+end
+end
+j,m=ax(au(ar)/an*t),ax(au(aq)/an*t)
+if j~=m then
+bD=1
+if j&gt;m then bD=-1 end
+s,aH=br(k[1],bO),br(k[1],bN)
+a_=aj[3]+90
+aK=a_-bQ
+cc=s*E.sin(aK/180*aD)
+aX=(s*ae(aK))
+if M~=ar then
+s=aX/ae(a_-(ar+k[3]))
+end
+if ba~=aq then
+aH=aX/ae(a_-(aq+k[3]))
+end
+s,aH=s*ae(ar),aH*ae(aq)
+l=aj[5]+6
+cl = (j&gt;m)
+if cl and O[l]~=0 then
+aG=O[3]&amp;4&gt;0
+if aG then
+ab,aa=c[8][c[3][O[6]][6]],c[8][c[3][O[7]][6]]
+end
+ai=c[3][O[l]]
+cf={ai[3],ai[4],ai[5]}
+N=c[8][ai[6]]
+bG,bV=L,L
+for i,f in ipairs(cf) do
+ay=f&gt;0
+aJ=T
+if (ay or (i==3 and not (bG and bV)))and (i==3 or aG)then
+bH=L
+bA=0
+if i&lt;3 then
+bH=i==1 and B(ab[4],aa[4])==0
+p,x=ab[3-i],aa[3-i]
+aJ=(p&lt;x)~=(i==2)~=(l==6)and p~=x and ab~=aa
+p,x=K(p,x),B(p,x)
+if aJ then
+if i==1then
+bG=T
+else
+bV=T
+bA=O[3]&amp;16&gt;0 and B(ab[2],aa[2])-x or 0
+end
+end
+else
+if aG then
+p,x=B(ab[1],aa[1]),K(ab[2],aa[2])
+aJ=ab~=aa
+else
+p,x=N[1],N[2]
+end
+end
+p,x=p-k[2],x-k[2]
+bz,by=p*bd,x*bd
+if (not bH) and (aJ or ay) then
+be=aj[6]-ai[1]
+if O[4]==48 then
+be=be-aM
+end
+bZ,bX=bz/s,by/s
+bY,bW=bz/aH,by/aH
+bB=0
+aE=L
+if ay then
+bJ=c[21][f][3]
+w=1
+if (i==3 and O[3]&amp;16&gt;0) or (i==1 and O[3]&amp;8==0) then
+w=-1
+end
+end
+for l=j,m,bD do
+aZ=(a_-k[3])-bC[l]
+g = t-l
+bM=L
+if g&gt;=0 and g&lt;=J-1 then
+if b&lt;aW[g] then
+aU=(l-j)/(m-j)
+I,H=(bZ*(1-aU)+bY*aU),(bX*(1-aU)+bW*aU)
+if G(H+I)-(H-I)&lt;P then
+if ay then
+if I~=H then
+bM=T
+bU=aX*au(aZ)
+R=K(((G(bU)+G(aX))//cb)+1,4)
+bw=K(bI(aF(R/ae(aZ))),16)
+R=bI(R)
+bb=aF((B(bU-cc,0)-be)/(bJ*bw))*bw
+bS={g,X-I,X-H,f,bb,x-p,N[5],ai[2]+bA,T,bJ*R,R,w,not aE,i==3 and aG}
+if bb&gt;bB or (not aE) or l==m then
+bB=bb-1+bw
+aE=T
+q[b][#q[b]+1]=bS
+end
+cn=bS
+end
+end
+
+if aJ then
+if i~=2 then
+if H&lt;af[g]then
+ag[b][#ag[b]+1]={g,B(H,ad[g]),af[g],N,2}
+end
+if i==3then Y=H else Y=I end
+if af[g]&gt;Y then af[g]=Y end
+end
+if i~=1 then
+if I&gt;ad[g]then
+ag[b][#ag[b]+1]={g,ad[g],K(I,af[g]),N,1}
+end
+if i==3then Y=I else Y=H end
+if ad[g]&lt;Y then ad[g]=Y end
+end
+if (af[g]&lt;=ad[g])or (i==3 and (not aG)and ay) then
+aW[g]=b
+bk=bk-1
+end
+end
+end
+end
+end
+if (not bM) and aE then
+aE=L
+q[b][#q[b]+1]=cn
+q[b][#q[b]][9]=L
+end
+end
+if #q[b]&gt;0 then
+q[b][#q[b]][9]=L
+end
+end
+end
+end
+end
+end
+end
+end
+b=b+1
+end
+
+if aM%16==1 then
+bi=bi%256+1
+ao=(4-K(ac//20,4))*8
+if bE[as] then
+ao=ao+c[13][1][bi]%3
+else
+bE[as]=1
+ao=ao+6
+end
+
+if ac&lt;=0 then
+ao=41
+end
+end
+end
+end
+end
+function onDraw()
+aQ=screen
+local bF,V,D,aP=aQ.drawTriangleF,aQ.drawRectF,aQ.setColor,aQ.drawText
+bj=bj+1
+if bj&lt;=1 then
+if ak then
+e=c[24][1]
+r,u=e[1],e[2]
+y=J/r
+for b=0,r do
+j=(r/2-b-1+k[3]/90*r)%r
+m=(j%1-1)*y
+j=aF(j)*u
+for n=0,u-1 do
+z=e[5+n+j]
+h=c[20][z]
+D(h[1],h[2],h[3])
+V(b*y+m,n*y,y,y)
+end
+end
+for b=#q,1,-1 do
+for n=1,#q[b] do
+f=q[b][n]
+if f[9] or f[13] then
+if f[9] then
+S=q[b][n+1]
+else
+S=f
+end
+e=c[21][f[4]]
+w=f[12]
+Z=K(w,0)
+g=f[1]
+m=S[1]
+bR=f[2-Z]
+cm=S[2-Z]
+l=f[3+Z]
+bn=S[3+Z]
+if not S[9] then m=m+1 end
+F=f[7]^2.2
+ca=w*(f[2]-f[3])*f[10]/f[6]
+b_=w*(S[2]-S[3])*f[10]/S[6]
+ap=w&gt;0 and K or B
+bo=0
+while l*w&lt;bR*w and (bo&lt;e[2] or not f[14]) do
+bP=ap(l+ca,bR)
+bm=ap(bn+b_,cm)
+z=e[5+((Z*f[11]+f[8]//e[3])%e[2])+e[2]*(f[5]%e[1])]
+h=c[20][z]
+if h then
+D(h[1]*F,h[2]*F,h[3]*F)
+bF(g,l,g,bP,m,bm)
+bF(g,l,m,bn,m,bm)
+end
+l=bP
+bn=bm
+Z=Z+w
+bo=bo+f[11]
+end
+end
+end
+for n,f in ipairs(ag[b]) do
+N=f[4]
+if N[f[5]+2]~=0 then
+e=c[22][N[f[5]+2]]
+g=f[1]
+F=N[5]^2.2
+h=c[20][e[4]]
+D(h[1]*F,h[2]*F,h[3]*F)
+screen.drawLine(g,-f[3]+X-1,g,-f[2]+X)
+end
+end
+for n=1,#aN[b] do
+a=c[1][aN[b][n]]
+if a[6]~=0 then
+aT=av(a,k[1])
+s=a[20]
+if s&gt;1 then
+M=bc(bx(aT)-k[3])
+s=s*ae(M)
+if G(M)&lt;90 then
+j=t-ax(au(M)/an*t)
+aZ=ax((180+M+k[3]-a[3])/360*8)
+U=c[16][a[6]][1]
+if U~=0 and a[6]~=1 then
+e=c[17][G(U)][aZ%8+1]
+w=e&lt;0 and -1 or 1
+e=G(e)
+e=c[23][e]
+r,u=e[1],e[2]
+R=s&lt;cd and 1 or 2
+y=t/(an*s)
+aR=y*aC
+I=X+(k[2]-a[9])/s*bd
+H=I-e[5]*aR
+m=j-w*e[4]*y
+y,aR=y*e[3],aR*e[3]
+F=U&gt;0 and c[8][a[8]][5]^2.2 or 1
+W=y*R
+aB=W*aC
+for l=0,r-1,R do
+j=m+l*y*w
+if b&lt;=aW[bv(ax(j),0,J-1)] then
+for i=0,u-1,R do
+z=e[7+i+l*u]
+if z~= 0 then
+h=c[20][z]
+D(h[1]*F,h[2]*F,h[3]*F)
+V(j,H+i*aR,W,aB)
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+
+if ak then
+if not as then
+as=2
+end
+e=c[23][c[14][as][13]]
+r,u,W=e[1],e[2],e[3]*0.7
+ci,ch=(e[4]+160)*0.7,(e[5]+148)*0.7
+aB=W*aC
+j,p=t-ci,P-ch*aC
+aK=7
+elseif c[21] then
+e=c[25][1]
+r,u,W=e[1],e[2],1
+j,p=t-r/2,80-u/2
+aB=W
+aK=5
+end
+
+if c[21]and ac&gt;0 then
+for l=0,r-1 do
+m=j+l*W
+for i=0,u-1 do
+z=e[aK+i+l*u]
+if z~= 0 then
+h=c[20][z]
+D(h[1],h[2],h[3])
+V(m,p+i*aB,W,aB)
+end
+end
+end
+end
+
+
+if ak then
+D(255,255,0,aL*1.5)
+V(0,0,J,P)
+D(255,0,0,az)
+V(0,0,J,P)
+
+D(50,50,50)
+V(0,P,J,32)
+D(25,25,25)
+V(t-16,P,32,32)
+e=c[23][c[19][3][1]+ao]
+r,u=e[1],e[2]
+j=t-r/2
+for b=0,r-1 do
+for n=0,u-1 do
+z=e[7+n+b*u]
+if z~=0 then
+h=c[20][z]
+D(h[1],h[2],h[3])
+V(j+b,P+1+n,1,1)
+end
+end
+end
+end
+
+
+
+D(255,255,255)
+aP(1,1,"ROM:")
+aP(26,1,aS)
+aP(1,7,"TPS:")
+aP(5,131,aF(ac))
+end
+end'><in1 component_id="130"/><in2 component_id="138"/></object></c><c type="58"><object id="84" n="text block start"><pos x="-8.25"/></object></c><c type="58"><object id="85" n="1" v="0"><pos x="-8.25" y="0.5"/></object></c><c type="57"><object id="93"><pos x="1.75" y="0.5"/><in2 component_id="130" node_index="1"/><in3 component_id="126"/></object></c><c type="57"><object id="125"><pos x="1.75" y="-0.5"/><in1 component_id="130" node_index="1"/><in3 component_id="126"/></object></c><c type="56"><object id="130" script='A=math
+N=A.max
+u=A.min
+bu=A.floor
+aD=A.pi
+ao=input.getNumber
+ap=input.getBool
+bk=output.setNumber
+_=output.setBool
+h=true
+i=false
+B=ipairs
+aV=A.abs
+
+function ah(d,j)return{(d[1]+j[1]),(d[2]+j[2])}end
+function ay(d,j)return{(d[1]-j[1]),(d[2]-j[2])}end
+function bl(d)return A.sin(d/180*aD)end
+function af(d)return A.cos(d/180*aD)end
+function J(d,j)return A.atan(j[2]-d[2],j[1]-d[1])*180/aD end
+function ae(d,j,af)return u(N(j,d),af)end
+function v(d,j)return A.sqrt(((d[1]-j[1])^2)+((d[2]-j[2])^2))end
+function Q(d,j)return{af(d)*j,bl(d)*j}end
+function P(d)return d[1],d[2]end
+
+b={}
+aA=1
+aI=3
+al=i
+aK=h
+U=2
+Z=1
+G=0
+ai=0
+am=0
+V=0
+aF=0
+n=1
+aH=0
+
+function aM(c,d)
+if c&lt;32768then
+local a=b[7][c]
+return aM(a[a[3]*(d[2]-a[2])-a[4]*(d[1]-a[1])&gt;0 and 8 or 7],d)
+else
+c=b[5][b[6][c-32768][2]]
+return b[3][b[2][c[4]][c[5]+6]][6]
+end
+end
+
+function aR(r,bq,y)
+e=b[15][b[1][y][4]]
+local aC,H,a,c,p,bL=e[18],e[19]
+D=aC
+ag=ay(r,b[10][1])
+I=b[10][2+ag[1]//128+ag[2]//128*bE[1]]
+for c=1,#I[0] do
+a=I[0][c]
+f=b[1][a]
+if a~=y and f and b[1][y][14]~=a then
+l=v(f,r)
+q=b[15][f[4]]
+if f[20] then
+z=l-q[18]
+bK=z&lt;D
+if z&lt;D and q[23]&amp;1&gt;0 and (e[23]&amp;1&gt;0 or not (r[9]+H&lt;f[9] or r[9]&gt;f[9]+q[19])) then
+aL=f
+if not bq then
+return i
+end
+D=z
+aS=J(r,f)
+end
+end
+if y==G and not f[10] then
+O=q[25]
+if O&gt;0 then
+if l&lt;50 then
+O=b[12][O]
+for x=1,#O do
+if O[x]&gt;0 and b[12][1][x]&lt;b[12][2][x] then
+b[1][a]=i
+b[12][1][x]=u(b[12][1][x]+O[x],b[12][2][x])
+if ae(x,5,11)==x then
+U=x-2
+end
+end
+end
+end
+end
+end
+end
+end
+
+aL=i
+S=b[8][aM(#b[7],r)]
+R,M=P(S)
+
+if M-R&gt;=H and R&lt;=r[9]+24 and M&gt;=r[9]+H then
+for c=1,#I do
+a=b[2][I[c]]
+l,bh=bD(r,b[4][a[1]],b[4][a[2]])
+if (a[3]&amp;1&gt;0 and e[23]&amp;1&gt;0) or a[3]&amp;4==0 then
+if l&lt;D then
+D=l
+aS=bh
+end
+else
+if l&lt;D then
+bf,bg=u(a[9],M),N(a[8],R)
+if u(r[9],M-H)+24&lt;bg or N(r[9],R)+H&gt;bf then
+D=l
+aS=bh
+else
+M,R=bf,bg
+end
+end
+end
+end
+s=D==aC
+S={R,M}
+if bq then
+if not s then
+a=ah(r,Q(aS,D-aC))
+r[1]=a[1]
+r[2]=a[2]
+end
+return h
+end
+return s
+end
+return i
+end
+
+function bD(t,w,ak)
+K=v(w,t)
+bG=J(w,ak)+90
+bF=bG-J(t,w)
+bs=-K*bl(bF)
+bw=K*af(bF)
+aW=bG
+if bw&lt;0 then
+aW=aW+180
+end
+if bs&lt;0 then
+return K,J(t,w)
+elseif bs&gt;v(ak,w) then
+return v(ak,t),J(t,ak)
+else
+return aV(bw),aW
+end
+end
+
+function aq(t,w,aJ,y)
+local a
+aT=v(t,w)
+aP=aT
+aE=h
+z,T=P(t)
+bc,aZ=P(w)
+at=bc-z
+as=aZ-T
+an,bt=t[9]+32,w[9]+32
+s=i
+for c,a in B(b[2]) do
+bb,aY=P(b[4][a[1]])
+bI,bH=P(b[4][a[2]])
+ba=bI-bb
+aX=bH-aY
+a_=T-aY
+bd=z-bb
+bA=aX*at-ba*as
+L=(ba*a_-aX*bd)/bA
+be=(at*a_-as*bd)/bA
+if ae(L,0,1)==L and ae(be,0,1)==be then
+bz={z+(L*at),T+(L*as)}
+l=v(t,bz)
+C=an+(bt-an)*(l/aT)
+if ae(C,a[8],a[9])~=C then
+aE=i
+if aJ==1 then
+return i
+end
+if l&lt;aP then
+aP=l
+by,bx=P(bz)
+bB=C
+ad=c
+end
+end
+end
+end
+
+if aJ&gt;1 then
+if aJ==3 then
+for c,a in B(b[1]) do
+if a and c~=y then
+e=b[15][a[4]]
+if e[23]&amp;1&gt;0 and a[20] then
+l=v(t,a)
+if l&lt;aP then
+L=bD(a,t,w)
+K=(l/aT)
+C=an+(bt-an)*K
+if ae(C,a[9],a[9]+e[19])==C and L&lt;e[18] then
+s=h
+aE=i
+by=z+(bc-z)*K
+bx=T+(aZ-T)*K
+bB=C
+ad=c
+end
+end
+end
+end
+end
+end
+return aE,ad,{by,bx,bB}
+end
+return h
+end
+
+function httpReply(d,j,af)
+br=am//2
+am=0
+end
+
+function aa()
+aF=aF%256+1
+return b[13][1][aF]
+end
+
+function aN(a,c)
+e=b[15][a[4]]
+if e[23]&amp;2&gt;0 and a[13]&gt;0 then
+a[13]=a[13]-c
+if aa()&lt;e[10] then
+a[6]=e[9]
+a[15]=0
+a[23]=g
+a[10]=h
+end
+end
+end
+
+function bJ(a,H)
+if a[9]&lt;=a[21] then
+a[9]=u(a[21],a[9]+4)
+a[19]=N(0,a[19])
+else
+if a[9]&gt;=a[22]-H then
+a[9]=a[22]-H
+a[19]=u(0,a[19])
+end
+a[19]=a[19]-1
+end
+end
+
+function bC(d,j,ar)
+return j[20] and aV(((J(d,j)-d[3]+180)%360)-180)&lt;ar and aq(d,j,1)
+end
+
+function bv(E,y)
+bo=X and (X[9]-E[9])*m[6]/v(X,E) or 0
+for c=1,m[12] do
+d={}
+for c=1,19 do
+d[c]=0
+end
+d[4]=m[8]
+d[10]=h
+
+bj=(aa()/128-1)*m[10]
+av=Q(E[3]+bj,m[6])
+if m[7]&gt;0 then
+b[1][#b[1]+1]=d
+for p=1,3 do
+d[p]=E[p]
+end
+e=b[15][d[4]]
+d[6]=e[3]
+d[9]=E[9]+32
+d[11]=av[1]
+d[12]=av[2]
+d[13]=1000
+d[14]=y
+d[17]=U
+d[19]=bo
+else
+f=ah(E,av)
+f[9]=g[9]+bo
+W,au,f=aq(E,f,3,y)
+if not W then
+bp=ay(f,Q(E[3]+bj,1))
+b[1][#b[1]+1]=d
+d[1]=bp[1]
+d[2]=bp[2]
+d[6]=b[15][d[4]][3]
+d[9]=f[3]
+d[13]=1000
+d[14]=y
+d[18]=20
+d[19]=1
+if s then
+d=b[1][au]
+aN(d,m[9]*((aa()&amp;3)+2))
+end
+end
+end
+end
+end
+
+function onTick()
+_(9,ap(32))
+_(2,i)
+
+for p=1,4 do
+if ap(32)and (not al)or not b[21]then
+aB=property.getText(aA.."")
+if aB~="" then
+c=1
+k=""
+a=string.sub(aB,c,c)
+while a~=""or k~=""do
+if a==","or a==""then
+k=k+0
+if n==1 then
+ad=k
+if b[k]==aG then
+b[k]={}
+end
+n=2
+elseif n==2 then
+C=k
+ac=0
+n=3
+elseif n==3 then
+aQ=k
+n=4
+else
+if ac==0 then
+ac=C
+aQ=aQ-1
+aO={}
+b[ad][#b[ad]+1]=aO
+end
+aO[#aO+1]=k
+ac=ac-1
+if N(ac,aQ)==0 then
+n=1
+end
+end
+k=""
+else
+k=k.. a
+end
+c=c+1
+a=string.sub(aB,c,c)
+end
+
+aA=aA+1
+else
+al=h
+end
+end
+end
+
+if al then
+if aK then
+aK=i
+aj=h
+for c=1,10 do
+b[c]=b[c+10*aI]
+end
+aI=aI+1
+for c,a in B(b[1])do
+for p=11,19 do
+a[p]=0
+end
+a[8]=aM(#b[7],a)
+a[9]=b[8][a[8]][1]
+a[10]=i
+a[13]=b[15][a[4]][4]
+a[20]=h
+if a[4]==1 then
+G=c
+g=a
+end
+end
+bE={b[10][1][3],b[10][1][4]}
+end
+
+if aj then
+aj=i
+for c,a in B(b[2])do
+if a[3]&amp;4&gt;0 then
+e,q=b[8][b[3][a[6]][6]],b[8][b[3][a[7]][6]]
+a[8]=N(e[1],q[1])
+a[9]=u(e[2],q[2])
+if e[9] then
+e[9]=u(e[9],q[2])
+else
+e[9]=q[2]
+end
+if q[9] then
+q[9]=u(q[9],e[2])
+else
+q[9]=e[2]
+end
+else
+a[8],a[9]=0,0
+end
+end
+end
+
+V=u(V+1/br,2/35)
+if V&gt;=0 then
+V=V-1/35
+_(1,h)
+
+for c=2,#b[10]do
+b[10][c][0]={}
+end
+
+for c,a in B(b[1])do
+if a then
+for p,aw in B({1,2,9})do
+a[aw]=a[aw]+a[aw+10]
+end
+a[15]=a[15]+1
+e=b[15][a[4]]
+if a[13]&lt;=0 and a[20] then
+a[15]=0
+a[6]=e[a[13]&lt;=-e[4] and e[15]&gt;1 and 15 or 14]
+a[10]=h
+a[20]=i
+if e[27]&gt;0 then
+f={}
+for p=1,30 do
+f[p]=a[p]
+end
+f[4]=e[27]
+f[6]=e[28]
+b[1][#b[1]+1]=f
+end
+end
+az=b[16][a[6]]
+
+if a[15]&gt;=az[2] and az[2]~=-1then
+a[6]=az[4]
+a[15]=0
+Y=b[16][a[6]][3]
+if Y==1 then
+for c,n in B(b[1]) do
+if n then
+k=128-v(a,n)
+if k&gt;0 then
+aN(n,k)
+end
+end
+end
+elseif Y==2 then
+if bC(a,g,90) then
+a[23]=g
+a[6]=e[5]
+end
+elseif Y==3 then
+ar=bu(J(a,a[23])/45+0.5)*45
+s=i
+n=1
+while n&lt;5 and not s do
+k=ah(a,Q(ar+b[19][2][n],8))
+k[9]=a[9]
+n=n+1
+s=aR(k,i,c)and S[1]&gt;=k[9]-24
+end
+if s then
+for p=1,2 do
+a[p]=k[p]
+end
+a[3]=ar
+a[9]=S[1]
+a[10]=h
+end
+if aq(a,a[23],1) then
+if u(v(a,a[23]),230)&lt;aa() and e[13]&gt;0 then
+a[6]=e[13]
+end
+end
+elseif Y&gt;9 then
+a[3]=J(a,a[23])
+m=b[14][Y]
+X=a[23]
+bv(a,c)
+end
+end
+if a[17] and a[17]&gt;0 then
+m=b[14][a[17]]
+s=aR(a,i,c)
+if a[9]&lt;=S[1] or not s then
+if aL then
+aN(aL,e[21]*((aa()&amp;7)+1))
+end
+a[1]=a[1]-a[11]
+a[2]=a[2]-a[12]
+a[3]=0
+a[6]=b[15][a[4]][14]
+a[10]=h
+a[11]=0
+a[12]=0
+a[17]=aG
+a[19]=0
+end
+end
+if a[6]==1 then
+b[1][c]=i
+else
+ag=ay(a,b[10][1])
+I=b[10][2+ag[1]//128+ag[2]//128*bE[1]]
+if I~=aG then
+I[0][#I[0]+1]=c
+end
+end
+end
+end
+
+for c=1,8 do
+if ap(c)and (c&lt;3 or b[12][1][c+2]&gt;0) then
+U=c
+end
+end
+
+m=b[14][U]
+
+g[3]=g[3]-ao(3)*(aH&gt;5 and 3 or 1.5)
+aH=aV(ao(3))*aH+1
+ab={g[1],g[2]}
+for c=1,2 do
+ab=ah(ab,Q(g[3]-180+90*c,ao(c)*8.33))
+end
+ab[9]=g[9]
+for c=1,2 do
+s=aR(ab,h,G)
+end
+if s then
+for c=1,2 do
+g[c]=ab[c]
+g[c+20]=S[c]
+end
+bJ(g,56)
+end
+
+aU=b[12][1]
+if ap(31) and ai&lt;=0 and (m[1]==0 or aU[m[1]]&gt;=m[2]) then
+ai=m[3]
+if m[1]&gt;0 then
+aU[m[1]]=aU[m[1]]-m[2]
+end
+X=i
+bn=2048
+for c,a in B(b[1])do
+if c~=G and a and bC(g,a,10) then
+l=v(a,g)
+if l&lt;bn then
+if b[15][a[4]][23]&amp;2&gt;0 then
+X=a
+bn=l
+end
+end
+end
+end
+
+bv(g,G)
+end
+ai=ai-1
+
+if ao(4)&lt;0 then
+a=ah(g,Q(g[3],64))
+a[9]=g[9]
+W,au=aq(g,a,2,G)
+W=not W
+a=b[2][au]
+if W then
+if a[4]==1 or a[4]==31 then
+e,q=b[8][b[3][a[6]][6]],b[8][b[3][a[7]][6]]
+q[10]=1
+elseif a[4]==11 then
+aK=h
+_(2,h)
+end
+end
+end
+
+for c,a in B(b[8])do
+if a[10]then
+if a[10]==3 then
+a[2]=a[2]-2
+if a[2]==a[1] then
+a[10]=aG
+end
+aj=h
+a[8]=h
+elseif a[10]==2 then
+a[11]=a[11]+1
+if a[11]==160 then
+a[10]=3
+end
+else
+a[2]=a[2]+2
+if a[2]==a[9]-4 then
+a[10]=2
+a[11]=0
+end
+aj=h
+a[8]=h
+end
+end
+end
+else
+_(1,i)
+end
+
+for c=1,32 do
+bk(c,0)
+end
+
+o={}
+for c=1,32 do o[c]=0 end
+
+o[1]=U
+o[2]=g[13]
+o[3]=G
+o[4]=g[1]
+o[5]=g[2]
+o[6]=g[9]
+o[11]=g[3]
+
+c=Z
+bm=h
+F=1
+ax=#b[1]+#b[8]
+while F&lt;3 and bm do
+f=F*9
+if c&lt;=#b[1] then
+a=b[1][c]
+if c~=G then
+if a then
+if a[10] then
+a[10]=i
+o[f+3]=c
+for p=4,11 do
+o[f+p]=a[b[19][1][p]]
+end
+F=F+1
+end
+else
+o[f+3]=-c
+table.remove(b[1],c)
+F=F+1
+ax=#b[1]+#b[8]
+end
+end
+else
+a=b[8][c-#b[1]]
+if a[8] then
+a[8]=i
+o[f+3]=c-#b[1]+2^15
+o[f+4]=a[1]
+o[f+5]=a[2]
+F=F+1
+end
+end
+c=((c-2)%ax)+1
+Z=u(Z,ax)
+bm=c~=Z
+end
+Z=c
+
+for c=1,#o do
+bk(c,o[c])
+end
+end
+
+am=am+1
+async.httpGet(8,"")
+end
+
+function onDraw()
+bi=screen.drawText
+
+bi(26,7,br)
+
+if al then
+for c=1,4 do
+bi(240,125+c*6,bu(b[12][1][c]))
+end
+end
+end'><pos x="-1.5" y="0.25"/><in1 component_id="88"/><in2 component_id="139" node_index="1"/></object></c><c type="56"><object id="139" script='c=math
+r=c.max
+x=c.min
+Q=c.abs
+z=c.floor
+v=c.sqrt
+K=input.getNumber
+s=input.getBool
+q=output.setNumber
+k=c.pi
+A=false
+u=true
+
+function M(a,e)return a[1]*e[2]-a[2]*e[1]end
+function F(a,e)return{(a[1]-e[1]),(a[2]-e[2])}end
+function D(a)return ((a+180)%360)-180 end
+function N(a)return c.cos(a/180*k)end
+function E(a)return c.tan(a/180*k)end
+function P(a)return c.atan(a)*180/k end
+function O(a)return c.atan(a[2],a[1])*180/k end
+function B(a,e,C)return x(r(e,a),C)end
+function w(a)return z(a+0.5)end
+function L(a,e)return v(((a[1]-e[1])^2)+((a[2]-e[2])^2))end
+function G(a)
+a=a-1
+a=a|(a&gt;&gt;1)
+a=a|(a&gt;&gt;2)
+a=a|(a&gt;&gt;4)
+return a+1
+end
+
+h={}
+l=1
+I=3
+n=A
+i=1
+
+i=0
+f=1
+
+function onTick()
+H=0
+
+for J=1,4 do
+if (true or s(9)) and (not n)or not h[21]then
+m=property.getText(l.."")
+if m~="" then
+g=1
+b=""
+d=string.sub(m,g,g)
+while d~=""or b~=""do
+if d==","or d==""then
+b=b+0
+
+if f==1 then
+t=b
+if h[b]==nil then
+h[b]={}
+end
+f=2
+elseif f==2 then
+y=b
+j=0
+f=3
+elseif f==3 then
+p=b
+f=4
+else
+if j==0 then
+j=y
+p=p-1
+o={}
+h[t][#h[t]+1]=o
+end
+o[#o+1]=b
+j=j-1
+if r(j,p)==0 then
+f=1
+end
+end
+
+b=""
+else
+b=b.. d
+end
+g=g+1
+d=string.sub(m,g,g)
+end
+
+l=l+1
+else
+n=u
+end
+end
+end
+
+if n then
+
+
+
+
+q(5,0)
+
+d=h[18][1]
+if ((i*2-1)%300)+1&lt;=#d then
+d=d[((i*2-1)%300)+1]
+if d&gt;0 then
+q(5,B(w((d+12)//2),1,60))
+end
+end
+i=i+1
+if s(1) then
+
+
+end
+
+
+end
+
+
+end
+
+function onDraw()
+
+end'><pos y="-1.25"/><in1 component_id="130"/><in2 component_id="4" node_index="1"/></object></c></components><components_bridge><c type="7"><object id="3"><pos x="3.5" y="1"/><in1 component_id="93"/></object></c><c type="4"><object id="88"><pos x="-5.25" y="0.25"/></object></c><c><object id="126"><pos y="-0.5"/></object></c><c type="7"><object id="129"><pos x="3.5"/><in1 component_id="125"/></object></c><c type="6"><object id="138"><pos x="-1.5" y="-0.25"/></object></c><c type="5"><object id="142"><pos x="1.75" y="-1"/><in1 component_id="139"/></object></c></components_bridge><groups/></group></microprocessor_definition><vp z="1"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_t"><o r="1,0,0,0,0,-1,0,1,0" sc="3"><vp x="5" y="5" z="12"/></o></c><c d="trans_straight"><o r="0,0,1,0,1,0,-1,0,0" sc="2"><vp x="5" y="5" z="13"/></o></c><c d="trans_straight"><o r="0,0,1,0,1,0,-1,0,0" sc="2"><vp x="5" y="5" z="14"/></o></c><c d="fluid_valve_variable"><o r="0,0,1,1,0,0,0,1,0" sc="2" fluid_filter="4294967295"><vp x="3" y="9" z="15"/><logic_slots><slot/><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="trans_straight"><o r="0,-1,0,1,0,0,0,0,1" sc="2"><vp x="5" y="6" z="15"/></o></c><c d="trans_straight"><o r="0,-1,0,1,0,0,0,0,1" sc="2"><vp x="5" y="7" z="15"/></o></c><c d="trans_angle"><o r="0,0,1,0,1,0,-1,0,0" sc="2"><vp x="5" y="5" z="15"/></o></c><c d="trans_t"><o r="1,0,0,0,1,0,0,0,1" sc="3"><vp x="5" y="9" z="15"/></o></c><c d="trans_straight"><o r="0,-1,0,1,0,0,0,0,1" sc="2"><vp x="5" y="10" z="15"/></o></c><c d="trans_straight"><o r="0,-1,0,1,0,0,0,0,1" sc="2"><vp x="5" y="11" z="15"/></o></c><c d="trans_angle"><o r="0,1,0,-1,0,0,0,0,1" sc="2"><vp x="5" y="12" z="15"/></o></c><c d="fluid_tank_compressed_gas_5_9"><o r="0,1,0,-1,0,0,0,0,1" sc="230" fluid_type="3" fluid_filter="4294967295" fluid_fill="0"><vp y="12" z="15"/><logic_slots><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots></o></c><c d="gate_function_small"><o r="1,0,0,0,1,0,0,0,1" sc="2" timer_scalar_1="0.183" timer_scalar_2="0.183" property_text="5-x"><vp x="3" y="1" z="6"/><logic_slots><slot/><slot/><slot editor_connected="1"/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/><slot/></logic_slots><property_output_float_val text="0"/><min_threshold text="0"/><max_threshold text="0"/><pid_controller_ki text="1" value="1"/><pid_controller_kp text="1" value="1"/><pid_controller_kd text="1" value="1"/><pid_controller_max_error text="0"/><exp text="2" value="2"/><min_lever_value text="-1" value="-1"/><max_lever_value text="1" value="1"/><starting_lever_value text="0"/></o></c><c d="sign"><o r="-1,0,0,0,0,-1,0,-1,0" sc="6" gc="x,x,x,x,x,x,x,x,x,x,x,141414,141414,141414,141414,141414,x,141414,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,x,141414,141414,141414,141414,141414,x,141414,x,x,x,x,x,x,x,x,x" gca="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"><vp y="7" z="7"/><logic_slots><slot/></logic_slots></o></c><c d="sign"><o r="-1,0,0,0,0,-1,0,-1,0" sc="6" gc="x,x,x,x,x,x,x,x,x,141414,141414,141414,141414,x,x,x,141414,141414,x,x,x,141414,x,x,x,x,x,x,x,x,141414,x,x,x,141414,141414,141414,141414,141414,141414,x,x,141414,x,x,x,x,x,141414,x,x,141414,x,x,x,x,x,141414,x,x,141414,141414,x,141414,141414,141414,141414,x,x,x,141414,141414,x,x,x,x,x,x,x,x,x" gca="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"><vp x="-1" y="7" z="7"/><logic_slots><slot/></logic_slots></o></c><c d="sign"><o r="-1,0,0,0,0,-1,0,-1,0" sc="6" gc="x,x,x,x,x,x,x,x,x,141414,x,141414,x,x,x,x,141414,x,141414,x,141414,x,x,x,x,141414,x,141414,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,141414,141414,x,141414,x,141414,141414,141414,141414,x,x,x,x,x,x,x,x,x,x,x,x" gca="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"><vp x="-2" y="7" z="7"/><logic_slots><slot/></logic_slots></o></c><c d="sign"><o r="-1,0,0,0,0,-1,0,-1,0" sc="6" gc="x,x,x,x,x,x,x,x,x,x,x,141414,x,x,x,141414,141414,x,x,x,141414,x,x,x,141414,141414,x,x,x,141414,x,x,141414,x,141414,x,x,x,141414,x,141414,x,x,141414,x,x,x,141414,141414,141414,x,x,141414,x,x,x,141414,141414,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,x,x,x,x,x,x,x" gca="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"><vp x="-2" y="8" z="7"/><logic_slots><slot/></logic_slots></o></c><c d="sign"><o r="-1,0,0,0,0,-1,0,-1,0" sc="6" gc="x,x,x,x,x,x,x,x,x,x,x,141414,141414,141414,141414,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,x,x,x,141414,x,x,x,x,141414,141414,141414,141414,141414,x,x,x,x,x,x,x,x,x,x,x" gca="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"><vp x="-1" y="8" z="7"/><logic_slots><slot/></logic_slots></o></c><c d="sign"><o r="-1,0,0,0,0,-1,0,-1,0" sc="6" gc="x,x,x,x,x,x,x,x,x,x,141414,141414,141414,141414,141414,141414,141414,x,x,x,x,x,141414,x,x,x,x,x,x,x,x,141414,x,x,x,x,x,x,x,x,141414,x,x,x,x,x,x,x,x,141414,x,x,x,x,x,x,x,x,141414,x,x,x,x,x,x,x,x,141414,x,x,x,x,x,x,x,x,x,x,x,x,x" gca="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"><vp y="8" z="7"/><logic_slots><slot/></logic_slots></o></c></components></body></bodies><logic_node_links><logic_node_link type="4"><voxel_pos_0 x="-1" y="5" z="4"/><voxel_pos_1 x="1" y="1" z="1"/></logic_node_link><logic_node_link><voxel_pos_0 x="-1" y="1" z="1"/><voxel_pos_1 x="-1" y="4"/></logic_node_link><logic_node_link type="4"><voxel_pos_0 x="1" y="1" z="1"/><voxel_pos_1 x="-1" y="4"/></logic_node_link><logic_node_link type="4"><voxel_pos_0 x="1" y="1" z="1"/><voxel_pos_1 x="-1" y="1"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="1" z="8"/><voxel_pos_1 x="-2" y="7" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="2" z="8"/><voxel_pos_1 x="-3" y="7" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="3" z="8"/><voxel_pos_1 x="-4" y="7" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="4" z="8"/><voxel_pos_1 x="-5" y="7" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="2" z="8"/><voxel_pos_1 x="-6" y="7" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="2" y="1" z="8"/><voxel_pos_1 x="-7" y="7" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="1" y="1" z="8"/><voxel_pos_1 x="1" y="4" z="8"/></logic_node_link><logic_node_link type="1"><voxel_pos_0 x="3" y="5" z="7"/><voxel_pos_1 x="1" y="2" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="1" z="9"/><voxel_pos_1 x="-2" y="9" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="2" z="9"/><voxel_pos_1 x="-3" y="9" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="3" z="9"/><voxel_pos_1 x="-4" y="9" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="4" z="9"/><voxel_pos_1 x="-5" y="9" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="2" z="9"/><voxel_pos_1 x="-6" y="9" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="2" y="1" z="9"/><voxel_pos_1 x="-7" y="9" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="1" z="10"/><voxel_pos_1 x="-2" y="11" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="2" z="10"/><voxel_pos_1 x="-3" y="11" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="3" z="10"/><voxel_pos_1 x="-4" y="11" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="4" z="10"/><voxel_pos_1 x="-5" y="11" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="2" z="10"/><voxel_pos_1 x="-6" y="11" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="2" y="1" z="10"/><voxel_pos_1 x="-7" y="11" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="1" z="11"/><voxel_pos_1 x="-2" y="13" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="2" z="11"/><voxel_pos_1 x="-3" y="13" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="3" z="11"/><voxel_pos_1 x="-4" y="13" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="4" z="11"/><voxel_pos_1 x="-5" y="13" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="2" z="11"/><voxel_pos_1 x="-6" y="13" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="2" y="1" z="11"/><voxel_pos_1 x="-7" y="13" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="1" z="12"/><voxel_pos_1 x="-2" y="15" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="2" z="12"/><voxel_pos_1 x="-3" y="15" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="3" z="12"/><voxel_pos_1 x="-4" y="15" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" y="4" z="12"/><voxel_pos_1 x="-5" y="15" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="2" z="12"/><voxel_pos_1 x="-6" y="15" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="2" y="1" z="12"/><voxel_pos_1 x="-7" y="15" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" z="8"/><voxel_pos_1 x="4" y="8" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="1" z="8"/><voxel_pos_1 x="3" y="8" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="2" z="8"/><voxel_pos_1 x="2" y="8" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="3" z="8"/><voxel_pos_1 x="1" y="8" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="4" z="8"/><voxel_pos_1 y="8" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" z="8"/><voxel_pos_1 x="-1" y="8" z="8"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" z="9"/><voxel_pos_1 x="4" y="10" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="1" z="9"/><voxel_pos_1 x="3" y="10" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="2" z="9"/><voxel_pos_1 x="2" y="10" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="3" z="9"/><voxel_pos_1 x="1" y="10" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="4" z="9"/><voxel_pos_1 y="10" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" z="9"/><voxel_pos_1 x="-1" y="10" z="9"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" z="10"/><voxel_pos_1 x="4" y="12" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="1" z="10"/><voxel_pos_1 x="3" y="12" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="2" z="10"/><voxel_pos_1 x="2" y="12" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="3" z="10"/><voxel_pos_1 x="1" y="12" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="4" z="10"/><voxel_pos_1 y="12" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" z="10"/><voxel_pos_1 x="-1" y="12" z="10"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" z="11"/><voxel_pos_1 x="4" y="14" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="1" z="11"/><voxel_pos_1 x="3" y="14" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="2" z="11"/><voxel_pos_1 x="2" y="14" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="3" z="11"/><voxel_pos_1 x="1" y="14" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="4" z="11"/><voxel_pos_1 y="14" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" z="11"/><voxel_pos_1 x="-1" y="14" z="11"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" z="12"/><voxel_pos_1 x="4" y="16" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="1" z="12"/><voxel_pos_1 x="3" y="16" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="2" z="12"/><voxel_pos_1 x="2" y="16" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="3" z="12"/><voxel_pos_1 x="1" y="16" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="4" y="4" z="12"/><voxel_pos_1 y="16" z="12"/></logic_node_link><logic_node_link><voxel_pos_0 x="3" z="12"/><voxel_pos_1 x="-1" y="16" z="12"/></logic_node_link><logic_node_link type="4"><voxel_pos_0 x="-3" y="1" z="1"/><voxel_pos_1 x="-1" y="1"/></logic_node_link><logic_node_link type="4"><voxel_pos_0 x="-1" y="5" z="4"/><voxel_pos_1 x="-2" y="2" z="9"/></logic_node_link><logic_node_link type="5"><voxel_pos_0 x="2" z="2"/><voxel_pos_1 x="2" y="4" z="11"/></logic_node_link><logic_node_link type="5"><voxel_pos_0 x="2" z="2"/><voxel_pos_1 x="2" y="4" z="9"/></logic_node_link><logic_node_link type="5"><voxel_pos_0 x="2" z="2"/><voxel_pos_1 x="2" y="4" z="10"/></logic_node_link><logic_node_link type="5"><voxel_pos_0 x="2" z="2"/><voxel_pos_1 x="2" y="4" z="12"/></logic_node_link><logic_node_link type="6"><voxel_pos_0 x="-2" y="2" z="9"/><voxel_pos_1 z="2"/></logic_node_link><logic_node_link type="6"><voxel_pos_0 z="1"/><voxel_pos_1 x="-1" y="4"/></logic_node_link><logic_node_link><voxel_pos_0 x="-1" y="1"/><voxel_pos_1 x="2" z="1"/></logic_node_link><logic_node_link type="6"><voxel_pos_0 x="1" z="1"/><voxel_pos_1 x="-1" y="1"/></logic_node_link><logic_node_link type="5"><voxel_pos_0 x="-1" y="1" z="-4"/><voxel_pos_1 x="1" z="2"/></logic_node_link><logic_node_link type="5"><voxel_pos_0 x="2" z="2"/><voxel_pos_1 x="2" y="4" z="8"/></logic_node_link><logic_node_link type="1"><voxel_pos_0 x="1" y="12" z="15"/><voxel_pos_1 x="3" y="1" z="7"/></logic_node_link><logic_node_link type="1"><voxel_pos_0 x="3" y="1" z="6"/><voxel_pos_1 x="3" y="9" z="14"/></logic_node_link><logic_node_link type="4"><voxel_pos_0 x="3" y="9" z="15"/><voxel_pos_1 x="-2" y="2" z="9"/></logic_node_link></logic_node_links></vehicle>

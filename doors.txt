@@ -1,0 +1,139 @@
+1	Doom	DR Door
+2	Doom	W1 Door Stay Open
+3	Doom	W1 Door Close
+4	Doom	W1 Door
+5	Doom	W1 Floor To Lowest Adjacent Ceiling
+6	Doom	W1 Start Crusher, Fast Damage
+7	Doom	S1 Build Stairs 8 Up
+8	Doom	W1 Build Stairs 8 Up
+9	Doom	S1 Floor Donut
+10	Doom	W1 Lift Also Monsters
+11	Doom	S1 Exit (Normal)
+12	Doom	W1 Light To Highest Adjacent Level
+13	Doom	W1 Light To 255
+14	Doom	S1 Floor Up 32 Change Texture
+15	Doom	S1 Floor Up 24 Change Texture
+16	Doom	W1 Door Close and Open
+17	Doom	W1 Light Blink 1.0 Sec
+18	Doom	S1 Floor To Higher Adjacent Floor
+19	Doom	W1 Floor To Highest Adjacent Floor
+20	Doom	S1 Floor To Higher Floor Change Texture
+21	Doom	S1 Lift
+22	Doom	W1 Floor To Higher Floor Change Texture
+23	Doom	S1 Floor To Lowest Adjacent Floor
+24	Doom	G1 Floor To Lowest Adjacent Ceiling
+25	Doom	W1 Start Crusher, Slow Damage
+26	Doom	DR Door Blue Key
+27	Doom	DR Door Yellow Key
+28	Doom	DR Door Red Key
+29	Doom	S1 Door
+30	Doom	W1 Floor Up Shortest Lower Texture
+31	Doom	D1 Door Stay Open
+32	Doom	D1 Door Blue Key
+33	Doom	D1 Door Red Key
+34	Doom	D1 Door Yellow Key
+35	Doom	W1 Light To 35
+36	Doom	W1 Floor To 8 Above Highest Adjacent Floor Fast
+37	Doom	W1 Floor To Lowest Adjacent Floor Change Texture and Type
+38	Doom	W1 Floor To Lowest Adjacent Floor
+39	Doom	W1 Teleport
+40	Doom	W1 Ceiling To Highest Ceiling
+41	Doom	S1 Ceiling To Floor
+42	Doom	SR Door Close
+43	Doom	SR Ceiling To Floor
+44	Doom	W1 Ceiling To 8 Above Floor
+45	Doom	SR Floor To Highest Adjacent Floor
+46	Doom	GR Door Also Monsters
+47	Doom	G1 Floor To Higher Floor Change Texture
+48	Doom	Scrolling Wall Left
+49	Doom	S1 Start Crusher, Slow Damage
+50	Doom	S1 Door Close
+51	Doom	S1 Exit (Secret)
+52	Doom	W1 Exit (Normal)
+53	Doom	W1 Start Moving Floor
+54	Doom	W1 Stop Moving Floor
+55	Doom	S1 Floor To 8 Below Lowest Adjacent Ceiling and Crush
+56	Doom	W1 Floor To 8 Below Lowest Adjacent Ceiling and Crush
+57	Doom	W1 Stop Crusher
+58	Doom	W1 Floor Up 24
+59	Doom	W1 Floor Up 24 Change Texture and Type
+60	Doom	SR Floor To Lowest Adjacent Floor
+61	Doom	SR Door Stay Open
+62	Doom	SR Lift
+63	Doom	SR Door
+64	Doom	SR Floor To Lowest Adjacent Ceiling
+65	Doom	SR Floor To 8 Below Lowest Adjacent Ceiling and Crush
+66	Doom	SR Floor Up 24 Change Texture
+67	Doom	SR Floor Up 32 Change Texture
+68	Doom	SR Floor To Higher Floor Change Texture
+69	Doom	SR Floor To Higher Adjacent Floor
+70	Doom	SR Floor To 8 Above Higher Adjacent Floor Fast
+71	Doom	S1 Floor To 8 Above Higher Adjacent Floor Fast
+72	Doom	WR Ceiling To 8 Above Floor
+73	Doom	WR Start Crusher, Slow Damage
+74	Doom	WR Stop Crusher
+75	Doom	WR Door Close
+76	Doom	WR Door Close and Open
+77	Doom	WR Start Crusher, Fast Damage
+79	Doom	WR Light To 35
+80	Doom	WR Light To Highest Adjacent Level
+81	Doom	WR Light To 255
+82	Doom	WR Floor To Lowest Adjacent Floor
+83	Doom	WR Floor To Highest Adjacent Floor
+84	Doom	WR Floor To Lowest Adjacent Floor Change Texture and Type
+86	Doom	WR Door Stay Open
+87	Doom	WR Start Moving Floor
+88	Doom	WR Lift Also Monsters
+89	Doom	WR Stop Moving Floor
+90	Doom	WR Door
+91	Doom	WR Floor To Lowest Adjacent Ceiling
+92	Doom	WR Floor Up 24
+93	Doom	WR Floor Up 24 Change Texture and Type
+94	Doom	WR Floor To 8 Below Lowest Adjacent Ceiling and Crush
+95	Doom	WR Floor To Higher Floor Change Texture
+96	Doom	WR Floor Up Shortest Lower Texture
+97	Doom	WR Teleport
+98	Doom	WR Floor To 8 Above Highest Adjacent Floor Fast
+101	Doom	S1 Floor To Lowest Adjacent Ceiling
+102	Doom	S1 Floor To Highest Adjacent Floor
+103	Doom	S1 Door Stay Open
+104	Doom	W1 Light To Lowest Adjacent Level
+99	Doom II	SR Door Blue Key Fast
+100	Doom II	W1 Build Stairs 16 and Crush
+105	Doom II	WR Door Fast
+106	Doom II	WR Door Stay Open Fast
+107	Doom II	WR Door Close Fast
+108	Doom II	W1 Door Fast
+109	Doom II	W1 Door Stay Open Fast
+110	Doom II	W1 Door Close Fast
+111	Doom II	S1 Door Fast
+112	Doom II	S1 Door Stay Open Fast
+113	Doom II	S1 Door Close Fast
+114	Doom II	SR Door Fast
+115	Doom II	SR Door Stay Open Fast
+116	Doom II	SR Door Close Fast
+117	Doom II	DR Door Fast
+118	Doom II	D1 Door Fast
+119	Doom II	W1 Floor To Higher Adjacent Floor
+120	Doom II	WR Lift Fast
+121	Doom II	W1 Lift Fast
+122	Doom II	S1 Lift Fast
+123	Doom II	SR Lift Fast
+124	Doom II	W1 Exit (Secret)
+125	Doom II	W1 Teleport Monsters Only
+126	Doom II	WR Teleport Monsters Only
+127	Doom II	S1 Build Stairs 16 + Crush
+128	Doom II	WR Floor To Higher Adjacent Floor
+129	Doom II	WR Floor To Higher Floor Fast
+130	Doom II	W1 Floor To Higher Floor Fast
+131	Doom II	S1 Floor To Higher Floor Fast
+132	Doom II	SR Floor To Higher Floor Fast
+133	Doom II	S1 Door Blue Key Fast
+134	Doom II	SR Door Red Key Fast
+135	Doom II	S1 Door Red Key Fast
+136	Doom II	SR Door Yellow Key Fast
+137	Doom II	S1 Door Yellow Key Fast
+138	Doom II	SR Light To 255
+139	Doom II	SR Light To 35
+140	Doom II	S1 Floor Up 512
+141	Doom II	W1 Start Crusher, Silent
