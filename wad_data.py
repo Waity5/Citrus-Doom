@@ -328,7 +328,7 @@ if __name__ == '__main__':
 
         start = text.find(find_start)
         end = text.find(find_end,start)
-        if i==0:
+        if i==-1:
             None
             print(code.split("\n")[334-1])
             

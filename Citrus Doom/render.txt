@@ -45,6 +45,7 @@ health=100
 mRandom=0
 transferCache={}
 bigNumb=32768
+difficulty=3002
 
 tick=0
 
@@ -176,6 +177,8 @@ function onTick()
 				cr=M[2][gN(2)]
 				if cr[4]>3004 then
 					LOD=mx(LOD+3*(cr[4]-3006),1)
+				elseif cr[4]>3000 then
+					difficulty=cr[4]
 				end
 				if cr[4]>3000 then
 					switchedSwitch=gN(2)
@@ -385,7 +388,7 @@ function onTick()
 
 											if render then
 												cr=M[21][v][4]
-												if seg[4]==switchedSwitch and cr>0then
+												if (seg[4]==switchedSwitch or difficulty==line[4]) and cr>0then
 													v=cr
 												end
 												resScl=M[21][v][3]
