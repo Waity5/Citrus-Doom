@@ -1,7 +1,7 @@
 m=math
 mx=m.max
 mn=m.min
-absFunc=m.abs
+abs=m.abs
 flr=m.floor
 sqrt=m.sqrt
 gN=input.getNumber
@@ -51,6 +51,7 @@ health=100
 yellow=0
 red=0
 transferCache={}
+weaponObjects={}
 
 tick=0
 stg=1
@@ -115,6 +116,10 @@ function onTick()
 
 	if loaded then
 		init=init or gB(2)
+		
+		
+		
+		
 		if health>0 and not init then
 			tmp={}
 			transferCache[#transferCache+1]=tmp
@@ -144,7 +149,6 @@ function onTick()
 		--
 		if gB(1) then
 			tick=tick+1
-			weapon=gN(1)
 			if init then
 				for i=1,10 do
 					M[i]=M[i+10*levelCr]
@@ -153,7 +157,43 @@ function onTick()
 				init=falseVar
 			end
 			
-			if gB(2) then
+			if weapon~=gN(1)then
+				weaponObjects={}
+				cr={}
+				cr[1]=M[29][gN(1)]
+				cr[2]=M[16][cr[1][1]]
+				test=cr[2][1]
+				cr[3]=0
+				weaponObjects[1]=cr
+			end
+			weapon=gN(1)
+			
+			if gB(3)then
+				cr=weaponObjects[1]
+				cr[2]=M[16][cr[1][4]]
+				cr[3]=0
+			end
+			
+			for i=#weaponObjects,1,-1 do
+				cr=weaponObjects[i]
+				if cr[3]==0 then
+					if cr[2][3]==4 then
+						weaponObjects[#weaponObjects+1]={cr[1],M[16][cr[1][5]],2}
+					end
+				end
+				cr[3]=cr[3]+1
+				if cr[3]>=cr[2][2] then
+					if cr[2][4]>2 then
+						cr[2]=M[16][cr[2][4]]
+						cr[3]=0
+					else
+						table.remove(weaponObjects,i)
+					end
+				end
+			end
+			
+			
+			if gB(2)then
 				yellow=50
 			end
 			red=mx(red-4,0)
@@ -229,29 +269,35 @@ function onDraw()
 	mN=mN+1
 
 	if mN<=1 then
-		if loaded then
-			if not weapon then
-				weapon=2
+		
+		if M[21]and not loaded then
+			tex=M[25][1]
+			tW,tH=tex[1],tex[2]
+			x1,y1=wdthH-tW/2,80-tH/2
+			for k=0,tW-1 do
+				x2=x1+k
+				for n=0,tH-1 do
+					pix=tex[5+n+k*tH]
+					if pix~=0 then
+						col=M[20][pix]
+						stCl(col[1],col[2],col[3])
+						rec(x2,y1+n,1,1)
+					end
+				end
 			end
-			tex=M[23][M[14][weapon][13]]
+		end
+		
+		for i=1,#weaponObjects do
+			tex=M[17][abs(weaponObjects[i][2][1])][1]
+			tex=M[23][tex]
 			tW,tH,pxSize=tex[1],tex[2],tex[3]*0.7
 			pxSizeV=pxSize*pixelAspectCorrection
 			x1,y1=wdthH-(tex[4]+160)*0.7,hght-(tex[5]+148)*0.7*pixelAspectCorrection
-			aOff=7
-		elseif M[21] then
-			tex=M[25][1]
-			tW,tH,pxSize=tex[1],tex[2],1
-			x1,y1=wdthH-tW/2,80-tH/2
-			pxSizeV=pxSize
-			aOff=5
-		end
-		
-		if M[21]and health>0 then
 			for k=0,tW-1 do
 				x2=x1+k*pxSize
 				for n=0,tH-1 do
-					pix=tex[aOff+n+k*tH]
-					if pix~= 0 then
+					pix=tex[7+n+k*tH]
+					if pix~=0 then
 						col=M[20][pix]
 						stCl(col[1],col[2],col[3])
 						rec(x2,y1+n*pxSizeV,pxSize,pxSizeV)

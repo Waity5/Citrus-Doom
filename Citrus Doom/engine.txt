@@ -297,6 +297,7 @@ end
 function onTick()
 	sB(9,gB(32))
 	sB(2,falseVar)
+	sB(3,falseVar)
 
 	for j=1,3 do
 		if gB(32)and (not loaded)or not M[21]then
@@ -366,8 +367,8 @@ function onTick()
 				end
 				cr[7]=M[15][cr[4]][4]-- health
 				cr[9],cr[10]=findMe(#M[7],cr)[1]-- vertical position
-				--cr[10]=falseVar-- send update to render block
-				--cr[20]=trueVar-- alive state
+				--cr[10]=falseVar-- send update to render block, set to nil above which counts as false
+				--cr[20]=trueVar-- alive state, set to zero above which counts as true
 				if cr[4]==1 then-- identify player
 					if pTng then
 						cr[7]=pTng[7]
@@ -551,14 +552,14 @@ function onTick()
 			
 			ammo=M[12][1]
 			pos=crWeapon[1]
-			if gB(31) and weaponFireDelay<=0 and (pos==0 or ammo[pos]>=crWeapon[2])then
+			if gB(31) and weaponFireDelay<=0 and (pos==0 or ammo[pos]>=crWeapon[2])then -- player shooting logic
+				sB(3,trueVar) -- announces player is firing
 				weaponFireDelay=crWeapon[3]
-				if pos>0then
+				if pos>0then -- drain ammo
 					ammo[pos]=ammo[pos]-crWeapon[2]
 				end
-				targ=falseVar
-				rampBst=2048
-				for i,cr in ipairsVar(M[1])do
+				rampBst,targ=2048
+				for i,cr in ipairsVar(M[1])do -- vertical auto aim
 					if i~=pIn and cr and chkView(pTng,cr,10)then
 						dst=dist(cr,pTng)
 						if dst<rampBst then
@@ -574,15 +575,14 @@ function onTick()
 			end
 			weaponFireDelay=weaponFireDelay-1
 			
-			if gN(4)<0 then
+			if gN(4)<0 then -- interacting with doors/linedefs in general
 				cr=add(pTng,dVec(pTng[3],64))
 				cr[9]=pTng[9]
 				thingExists,wall=chkRayCol(pTng,cr,2,pIn)
 				cr=M[2][wall]
 				if thingExists==falseVar then
 					out[2]=wall
-					pos=cr[4]
-					valid=falseVar
+					pos,valid=cr[4]
 					for i=14,16 do-- used for keyed doors
 						valid=valid or M[12][1][i]>0 and pos==i+18
 					end
@@ -591,25 +591,24 @@ function onTick()
 					elseif pos==11then
 						init=trueVar
 						sB(2,trueVar)
-					elseif pos>3004then
-					elseif pos>3000then
+					elseif pos>3000 and pos<3005then
 						difficulty=flr(pos-3000)
 					end
 				end
 			end
 
-			for i,cr in ipairsVar(M[8])do
+			for i,cr in ipairsVar(M[8])do -- moves doors
 				if cr[10]then
-					if cr[10]==3 then
+					if cr[10]>2then
 						cr[2]=cr[2]-2
 						if cr[2]==cr[1]then
 							cr[10]=nilVar
 						end
 						refWlls=trueVar
 						cr[8]=trueVar
-					elseif cr[10]==2then
+					elseif cr[10]>1then
 						cr[11]=cr[11]+1
-						if cr[11]==160then
+						if cr[11]>159then
 							cr[10]=3
 						end
 					else

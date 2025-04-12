@@ -396,7 +396,13 @@ if __name__ == '__main__':
     state_actions = {'A_Explode':1,
                      'A_Look':2,
                      'A_Chase':3,
-                     'A_PosAttack':10,
+                     'A_FirePistol':4, # fist and chainsaw aren't included as they don't have muzzle flash
+                     'A_FireShotgun':4,
+                     'A_FireShotgun2':4,
+                     'A_FireCGun':4,
+                     'A_GunFlash':4,
+                     'A_FirePlasma':4,
+                     'A_PosAttack':10, # for simplicity they use the same index as their weapons
                      'A_SPosAttack':11,
                      'A_TroopAttack':12,
                      'A_SargAttack':14,
@@ -431,8 +437,8 @@ if __name__ == '__main__':
             cur = 0
 
         info_states_processed.append([cur, #rotation index
-                                      int(state[2]), #delay (?)
-                                      state[3], #don't know what to do with actions yet
+                                      int(state[2]), #delay
+                                      state[3], #action
                                       info_states_zip[7].index(state[4])+1, #next state
                                       0, #used for pickups
                                       ])
@@ -541,16 +547,28 @@ if __name__ == '__main__':
             if type(i[j]) == type(""):
                 i[j] = 0
 
-    #info_spawn_lengths = [len(i) for i in info_spawn]
-    #print(info_spawn_lengths.count(min(info_spawn_lengths)),info_spawn_lengths.count(max(info_spawn_lengths)))
-    #print(info_spawn_lengths)
-    
+    file = open("weapon_states.txt")
+    weapon_states = file.read()
+    file.close()
 
+    weapon_states = weapon_states.split("""
+    },
+    {
+""")
+    for index in range(len(weapon_states)):
+        i = weapon_states[index].split("\n")
+        i = [j.replace("\t","").replace(" ","").replace("/","").replace(",","") for j in i]
+        for j in range(2,7):
+            #print(i[j])
+            i[j] = info_states_zip[7].index(i[j])+1
+        i=i[2:]
+        weapon_states[index]=i
+        #print(i)
     
-
-    #print(info_spawn[1])
-    #print(list(start_tags),len(start_tags))
-    #halt
+    
+    
+        
+        
 
     
     #print(pixels//(8**2)/(4000/3.5),pixels,num)
@@ -902,12 +920,12 @@ if __name__ == '__main__':
             new[7] = temp+1
 
 
-        if new[12] in sprite_textures:
-            if not new[12] in sprite_overrides:
-                sprite_overrides[new[12]] = res_scale_sprites_weapons
-            new[12] = sprite_textures.index(new[12])+1
-        else:
-            new[12] = 0
+        #if new[12] in sprite_textures:
+        #    if not new[12] in sprite_overrides:
+        #        sprite_overrides[new[12]] = res_scale_sprites_weapons
+        #    new[12] = sprite_textures.index(new[12])+1
+        #else:
+        #    new[12] = 0
         
         for j in range(len(new)):
             if type(new[j]) != type(""):
@@ -1012,9 +1030,25 @@ if __name__ == '__main__':
             packets.append(new)
         else:
             packets[-1]+=(","+new)
-    
-    
 
+    
+    cur=""
+    curnum=0 
+    for index in range(len(weapon_states)):
+        i=weapon_states[index]
+        
+        curnum+=1
+        
+        new=(str(i)[1:-1]+",").replace(" ","")
+        if len(cur)+len(new)>curmax:
+            packets.append("29,5,"+str(curnum-1)+","+cur[:-1])
+            cur = new
+            curnum = 1
+        else:
+            cur += new
+            
+    packets.append("29,5,"+str(curnum)+","+cur[:-1])
+    
     
 
     #print(sprite_overrides)
