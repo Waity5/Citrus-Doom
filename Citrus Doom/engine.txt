@@ -580,6 +580,7 @@ function onTick()
 				thingExists,wall=chkRayCol(pTng,cr,2,pIn)
 				cr=M[2][wall]
 				if thingExists==falseVar then
+					out[2]=wall
 					pos=cr[4]
 					valid=falseVar
 					for i=14,16 do-- used for keyed doors
@@ -591,7 +592,6 @@ function onTick()
 						init=trueVar
 						sB(2,trueVar)
 					elseif pos>3004then
-						out[2]=pos
 					elseif pos>3000then
 						difficulty=flr(pos-3000)
 					end

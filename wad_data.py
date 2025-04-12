@@ -328,9 +328,9 @@ if __name__ == '__main__':
 
         start = text.find(find_start)
         end = text.find(find_end,start)
-        if i==-1:
+        if i==0:
             None
-            print(code.split("\n")[152-1])
+            print(code.split("\n")[334-1])
             
 
         assert start>0 and end>0, "Code insertion search terms not in base doom file"
@@ -1287,9 +1287,11 @@ if __name__ == '__main__':
                 res_scale_cur = res_scale_walls
                 
             i=wad.asset_data.wall_textures[index]
+            switch=(str(wall_textures.index("SW2"+index[3:])+1) if index[0:3]=="SW1" else "0")
             width=len(i)//res_scale_cur
             height=len(i[0])//res_scale_cur
-            cur="21,"+str(width*height+4)+",1,"+str(width)+","+str(height)+","+str(res_scale_cur)+","+str(wall_avs[index]+1)
+            cur = "21,"+str(width*height+5)+",1,"+str(width)+","+str(height)+","
+            cur+= str(res_scale_cur)+","+switch+","+str(wall_avs[index]+1)
 
             if len(temp_packets)==0:
                 temp_packets.append(cur)

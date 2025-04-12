@@ -162,7 +162,10 @@ function onTick()
 			health=gN(3)
 			armour=gN(4)
 			if gN(2)>0 then
-				LOD=mx(LOD+3*(gN(2)-3006),1)
+				cr=M[2][gN(2)]
+				if cr[4]>3004 then
+					LOD=mx(LOD+3*(cr[4]-3006),1)
+				end
 			end
 			
 			for i=1,#transferCache do

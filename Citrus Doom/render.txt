@@ -162,6 +162,7 @@ function onTick()
 		end
 		
 		if gB(1) then
+			switchedSwitch=0
 			weapon=gN(1)
 			health=gN(3)
 			tick=tick+1
@@ -172,7 +173,13 @@ function onTick()
 				levelCr=levelCr+1
 			end
 			if gN(2)>0 then
-				LOD=mx(LOD+3*(gN(2)-3006),1)
+				cr=M[2][gN(2)]
+				if cr[4]>3004 then
+					LOD=mx(LOD+3*(cr[4]-3006),1)
+				end
+				if cr[4]>3000 then
+					switchedSwitch=gN(2)
+				end
 			end
 			
 			
@@ -377,7 +384,12 @@ function onTick()
 											passL=falseVar
 
 											if render then
+												cr=M[21][v][4]
+												if seg[4]==switchedSwitch and cr>0then
+													v=cr
+												end
 												resScl=M[21][v][3]
+												
 												flip=1
 												if (n==3 and line[3]&16>0) or (n==1 and line[3]&8==0) then
 													flip=-1
@@ -524,7 +536,7 @@ function onDraw()
 						kN=crM(k+yScl,fin)
 						k2N=crM(k2+yScl2,fin2)
 
-						pix=tex[5+((y*v[11]+v[8]//tex[3])%tex[2])+tex[2]*(v[5]%tex[1])]
+						pix=tex[6+((y*v[11]+v[8]//tex[3])%tex[2])+tex[2]*(v[5]%tex[1])]
 						col=M[20][pix]
 						if col then
 							stCl(col[1]*lght,col[2]*lght,col[3]*lght)
