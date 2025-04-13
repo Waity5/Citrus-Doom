@@ -157,21 +157,23 @@ function onTick()
 				init=falseVar
 			end
 			
-			if weapon~=gN(1)then
-				weaponObjects={}
-				cr={}
-				cr[1]=M[29][gN(1)]
-				cr[2]=M[16][cr[1][1]]
-				test=cr[2][1]
-				cr[3]=0
-				weaponObjects[1]=cr
-			end
-			weapon=gN(1)
-			
-			if gB(3)then
-				cr=weaponObjects[1]
-				cr[2]=M[16][cr[1][4]]
-				cr[3]=0
+			if health>0 then
+				if weapon~=gN(1)then
+					weaponObjects={}
+					cr={}
+					cr[1]=M[29][gN(1)]
+					cr[2]=M[16][cr[1][1]]
+					test=cr[2][1]
+					cr[3]=0
+					weaponObjects[1]=cr
+				end
+				weapon=gN(1)
+				
+				if gB(3)then
+					cr=weaponObjects[1]
+					cr[2]=M[16][cr[1][4]]
+					cr[3]=0
+				end
 			end
 			
 			for i=#weaponObjects,1,-1 do
