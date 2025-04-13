@@ -203,8 +203,10 @@ function onTick()
 			armour=gN(4)
 			if gN(2)>0 then
 				cr=M[2][gN(2)]
-				if cr[4]>3004 then
-					LOD=mx(LOD+3*(cr[4]-3006),1)
+				if cr then
+					if cr[4]>3004 then
+						LOD=mx(LOD+3*(cr[4]-3006),1)
+					end
 				end
 			end
 			
