@@ -223,7 +223,7 @@ function onTick()
 						cr[1]=info[2]
 						cr[2]=info[3]
 					elseif cr<0 then
-						if M[1][-cr] then
+						if -cr<=#M[1] then
 							info=M[1][-cr][6]
 							if M[16][info][5]>0 then
 								yellow=mx(yellow,15)
