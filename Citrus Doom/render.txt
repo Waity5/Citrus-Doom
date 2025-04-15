@@ -46,6 +46,8 @@ mRandom=0
 transferCache={}
 bigNumb=32768
 difficulty=3002
+fuzz=0
+screenBrightTimer=0
 
 tick=0
 
@@ -187,6 +189,15 @@ function onTick()
 				end
 			end
 			
+			if gB(3) and weapon~=1 and weapon~=3 then
+				screenBrightOffset=0.1
+				screenBrightTimer=weapon==5 and 5 or 3
+			else
+				screenBrightTimer=screenBrightTimer-1
+				if screenBrightTimer<1then
+					screenBrightOffset=0
+				end
+			end
 			
 			for i=1,#transferCache do
 				tmp=transferCache[i]
@@ -531,7 +542,7 @@ function onDraw()
 
 					if not v2[9] then x2=x2+1 end
 
-					lght=v[7]^2.2
+					lght=mn(v[7]+screenBrightOffset,1)^2.2
 
 					yScl=flip*(v[2]-v[3])*v[10]/v[6]
 					yScl2=flip*(v2[2]-v2[3])*v[10]/v2[6]
@@ -566,7 +577,7 @@ function onDraw()
 					if sec[v[5]+2]~=0 then
 						tex=M[22][sec[v[5]+2]]
 						x=v[1]
-						lght=sec[5]^2.2
+						lght=mn(sec[5]+screenBrightOffset,1)^2.2
 						col=M[20][tex[4]]
 						stCl(col[1]*lght,col[2]*lght,col[3]*lght)
 						screen.drawLine(x,-v[3]+hghtH-1,x,-v[2]+hghtH)
@@ -598,18 +609,34 @@ function onDraw()
 									yt=yb-tex[5]*sclV
 									x2=x1-flip*tex[4]*scl
 									scl,sclV=scl*tex[3],sclV*tex[3]
-									lght=state>0 and M[8][cr[8]][5]^2.2 or 1
+									lght=state>0 and mn(M[8][cr[8]][5]+screenBrightOffset,1)^2.2 or 1
 									pxSize=scl*cScl
 									pxSizeV=pxSize*pixelAspectCorrection
-									for k=0,tW-1,cScl do
-										x1=x2+k*scl*flip
-										if i<=dpth[clmp(rnd(x1),0,wdth-1)] then
-											for n=0,tH-1,cScl do
-												pix=tex[7+n+k*tH]
-												if pix~= 0 then
-													col=M[20][pix]
-													stCl(col[1]*lght,col[2]*lght,col[3]*lght)
-													rec(x1,yt+n*sclV,pxSize,pxSizeV)
+									if cr[4] and M[15][cr[4]][23]&8>0 then
+										for k=0,tW-1,cScl do
+											x1=x2+k*scl*flip
+											if i<=dpth[clmp(rnd(x1),0,wdth-1)] then
+												for n=0,tH-1,cScl do
+													pix=tex[7+n+k*tH]
+													if pix~= 0 then
+														fuzz=fuzz%50+1
+														stCl(0,0,0,mn(75*M[13][2][fuzz],255))
+														rec(x1,yt+n*sclV,pxSize,pxSizeV)
+													end
+												end
+											end
+										end
+									else
+										for k=0,tW-1,cScl do
+											x1=x2+k*scl*flip
+											if i<=dpth[clmp(rnd(x1),0,wdth-1)] then
+												for n=0,tH-1,cScl do
+													pix=tex[7+n+k*tH]
+													if pix~= 0 then
+														col=M[20][pix]
+														stCl(col[1]*lght,col[2]*lght,col[3]*lght)
+														rec(x1,yt+n*sclV,pxSize,pxSizeV)
+													end
 												end
 											end
 										end

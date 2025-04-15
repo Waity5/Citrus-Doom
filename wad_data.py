@@ -174,7 +174,7 @@ def div(a,b):
 
 if __name__ == '__main__':
     start_time=time.time()
-    
+    #,"weapons_at_start.wad"
     file_name=["DOOM_no_fancy_linedefs.WAD","settings_map.wad"] # more rightwards ones overwrite leftwards ones
     #map_order=["E"+str(1+i//9)+"M"+str(1+i%9) for i in range(3*9)]
     #map_order=["E1M2"]
@@ -467,7 +467,7 @@ if __name__ == '__main__':
                    'MF_SPECIAL':0,
                    'MF_PICKUP':0,
                    'MF_SPAWNCEILING':0,
-                   'MF_SHADOW':0,
+                   'MF_SHADOW':8,
                    'MF_NOBLOOD':0,
                    'MF_SHOOTABLE':2,
                    'MF_MISSILE':0,
@@ -876,12 +876,33 @@ if __name__ == '__main__':
     for i in random:
         i = i.split(" ")
         cur += (","+i[1])
-        
 
     if len(packets[-1])+len(cur)+1 <= curmax:
         packets[-1]+=(","+cur)
     else:
         packets.append(cur)
+
+    file = open("fuzz.txt")
+    fuzz = file.read()
+    file.close()
+
+    fuzz = fuzz.replace("\n    ","")
+
+    fuzz = fuzz.split(",")
+    cur = "13,50,1"
+    darkness = 1
+    for i in fuzz:
+        if not "-" in i:
+            darkness = 1
+        cur += (","+str(darkness))
+        darkness += 1
+    #print(cur)
+
+    if len(packets[-1])+len(cur)+1 <= curmax:
+        packets[-1]+=(","+cur)
+    else:
+        packets.append(cur)
+    
 
     file = open("weapons.txt")
     weapons = file.read()
