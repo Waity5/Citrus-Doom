@@ -224,14 +224,21 @@ function onTick()
 						cr[2]=info[3]
 					elseif cr<0 then
 						if -cr<=#M[1] then
-							info=M[1][-cr][6]
-							if M[16][info][5]>0 then
-								yellow=mx(yellow,15)
+							if M[1][-cr]~=nil then
+								info=M[1][-cr][6]
+								if M[16][info][5]>0 then
+									yellow=mx(yellow,15)
+								end
+							else
+								M[1][-cr]={}
+							end
+							while -cr>#M[1] do
+								M[1][#M[1]+1]=falseVar
 							end
 							table.remove(M[1],-cr)
 						end
 					else
-						if M[1][cr]==nil then
+						if not M[1][cr] then
 							M[1][cr]={}
 						end
 						cr=M[1][cr]

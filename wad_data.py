@@ -174,7 +174,7 @@ def div(a,b):
 
 if __name__ == '__main__':
     start_time=time.time()
-    #,"weapons_at_start.wad"
+    #,"weapons_at_start.wad","jump_to_crash_zone.wad"
     file_name=["DOOM_no_fancy_linedefs.WAD","settings_map.wad"] # more rightwards ones overwrite leftwards ones
     #map_order=["E"+str(1+i//9)+"M"+str(1+i%9) for i in range(3*9)]
     #map_order=["E1M2"]
@@ -330,7 +330,7 @@ if __name__ == '__main__':
         end = text.find(find_end,start)
         if i==-1:
             None
-            print(code.split("\n")[177-1])
+            print(code.split("\n")[227-1])
             
 
         assert start>0 and end>0, "Code insertion search terms not in base doom file"
