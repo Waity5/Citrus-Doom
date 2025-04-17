@@ -319,7 +319,7 @@ if __name__ == '__main__':
     print()
 
     for i in range(3):
-        name = ["render.txt","engine.txt","sound.txt"][i]
+        name = ["render.lua","engine.lua","sound.lua"][i]
         file = open(path_root+name)
         code = file.read()
         file.close()
