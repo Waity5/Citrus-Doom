@@ -172,6 +172,15 @@ def add(a,b):
 def div(a,b):
     return tuple([i/b for i in a])
 
+def insert_thinker(thinker):
+    global sector_thinkers
+    
+    if thinker in sector_thinkers:
+        return sector_thinkers.index(thinker)+1
+    else:
+        sector_thinkers.append(thinker)
+        return len(sector_thinkers)
+
 if __name__ == '__main__':
     start_time=time.time()
     #,"weapons_at_start.wad","jump_to_crash_zone.wad"
@@ -230,6 +239,8 @@ if __name__ == '__main__':
     res_scale_sprites_weapons = 2
     res_scale_sprites_face = 1
     res_scale_sky = 4
+
+    TICKRATE = 35
 
     wall_textures = [*wad.asset_data.wall_textures]
     flat_textures = [*wad.asset_data.flat_textures]
@@ -330,7 +341,7 @@ if __name__ == '__main__':
         end = text.find(find_end,start)
         if i==-1:
             None
-            print(code.split("\n")[227-1])
+            print(code.split("\n")[555-1])
             
 
         assert start>0 and end>0, "Code insertion search terms not in base doom file"
@@ -616,6 +627,57 @@ if __name__ == '__main__':
                     curset = set.union(curset,og_blockmap[1+curx+cury*width])
                 
                 blockmap[1+i+j*width] = list(curset)
+        
+        line_type_repleacements = {32:32-18,33:33-18,34:34-18,
+                                   26:32-18,27:34-18,28:33-18, #open often to stay open, but treated as open often
+                                   31:1,
+                                   }
+                
+
+        for index in range(len(level_wad.linedefs)):
+            i=level_wad.linedefs[index]
+            i.front_sidedef_id=(i.front_sidedef_id+1)%65536
+            i.back_sidedef_id=(i.back_sidedef_id+1)%65536
+
+            if i.front_sidedef_id > 0 and i.back_sidedef_id > 0:
+                
+                s1i=level_wad.sidedefs[i.front_sidedef_id-1].sector_id
+                s2i=level_wad.sidedefs[i.back_sidedef_id-1].sector_id
+                
+                s1=level_wad.sectors[s1i]
+                s2=level_wad.sectors[s2i]
+
+                if i.line_type in line_type_repleacements:
+                    i.line_type = line_type_repleacements[i.line_type]
+
+                if s1.neighbouring_lowest_ceiling == None:
+                    s1.neighbouring_lowest_ceiling = s2.ceil_height
+                else:
+                    s1.neighbouring_lowest_ceiling = min(s1.neighbouring_lowest_ceiling,s2.ceil_height)
+
+                if s2.neighbouring_lowest_ceiling == None:
+                    s2.neighbouring_lowest_ceiling = s1.ceil_height
+                else:
+                    s2.neighbouring_lowest_ceiling = min(s2.neighbouring_lowest_ceiling,s1.ceil_height)
+            
+
+        sector_thinkers=[] # format for thinkers is (targ sec, value to change (1 for floor, 2 for ceil), targ height, end delay, next thinker)
+        for index in range(len(level_wad.linedefs)): # compiles the sector thinkers
+            i=level_wad.linedefs[index]
+
+            s1i=level_wad.sidedefs[i.front_sidedef_id-1].sector_id
+            s2i=level_wad.sidedefs[i.back_sidedef_id-1].sector_id
+            
+            s1=level_wad.sectors[s1i]
+            s2=level_wad.sectors[s2i]
+    
+            if i.line_type in [1,14,15,16]:
+                thinker = (level_wad.sidedefs[i.back_sidedef_id-1].sector_id+1, 2, s2.floor_height, 1, 0)
+                next_thinker = insert_thinker(thinker)
+
+                thinker = (level_wad.sidedefs[i.back_sidedef_id-1].sector_id+1, 2, s2.neighbouring_lowest_ceiling-8, TICKRATE*4, next_thinker)
+                i.sector_tag = insert_thinker(thinker)
+        
                 
         
         cur=""
@@ -645,10 +707,6 @@ if __name__ == '__main__':
 
 
         
-        line_type_repleacements = {26:32,27:34,28:33, #open often to stay open, but treated as open often
-                                   31:1,
-                                   }
-        
         cur=""
         curnum=0 
         for index in range(len(level_wad.linedefs)):
@@ -662,12 +720,10 @@ if __name__ == '__main__':
             #    print(index,temp.lower_texture,temp.upper_texture)
 
             
-            if i.line_type in line_type_repleacements:
-                i.line_type = line_type_repleacements[i.line_type]
             
                 
             
-            new=(str([i.start_vertex_id+1,i.end_vertex_id+1,i.flags,i.line_type,i.sector_tag,(i.front_sidedef_id+1)%65536,(i.back_sidedef_id+1)%65536])[1:-1]+",").replace(" ","")
+            new=(str([i.start_vertex_id+1,i.end_vertex_id+1,i.flags,i.line_type,i.sector_tag,i.front_sidedef_id,i.back_sidedef_id])[1:-1]+",").replace(" ","")
             if len(cur)+len(new)>curmax:
                 packets.append(str(level_data_offset+2)+",7,"+str(curnum-1)+","+cur[:-1])
                 cur = new
@@ -796,6 +852,24 @@ if __name__ == '__main__':
                 cur += new
                 
         packets.append(str(level_data_offset+8)+",7,"+str(curnum)+","+cur[:-1])
+
+
+        cur=""
+        curnum=0 
+        for i in sector_thinkers:
+
+            curnum+=1
+            #print(len(i))
+            new=(str(i)[1:-1]+",").replace(" ","")
+            if len(cur)+len(new)>curmax:
+                packets.append(str(level_data_offset+9)+",5,"+str(curnum-1)+","+cur[:-1])
+                cur = new
+                curnum = 1
+            else:
+                cur += new
+
+        if cur!="":
+            packets.append(str(level_data_offset+9)+",5,"+str(curnum)+","+cur[:-1])
 
 
         cur=""
@@ -1493,8 +1567,10 @@ if __name__ == '__main__':
     
     parts = packets
     print(len(parts),"text boxes total")
-    largest=max([len(i) for i in packets])
-    print("largest text box is",largest)
+    sizes = [len(i) for i in packets]
+    print("largest text box is",max(sizes))
+    print("average text box is",sum(sizes)/len(sizes))
+    
     #[(print(i) if (len(i)==largest) else 0) for i in packets]
     
     

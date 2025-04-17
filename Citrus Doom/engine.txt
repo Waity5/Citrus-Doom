@@ -10,6 +10,7 @@ trueVar=true
 falseVar=false
 ipairsVar=ipairs
 abs=m.abs
+tableRemove=table.remove
 
 function add(a,b)return{(a[1]+b[1]),(a[2]+b[2])}end
 function sub(a,b)return{(a[1]-b[1]),(a[2]-b[2])}end
@@ -35,6 +36,7 @@ pRandom=0
 stg=1
 lookAcl=0
 difficulty=2
+thinkers={}
 
 function findMe(i,a,cr)
 	if i<32768then
@@ -389,9 +391,7 @@ function onTick()
 				if cr[3]&4>0 then
 					s1,s2=M[8][M[3][cr[6]][6]],M[8][M[3][cr[7]][6]]
 					cr[8]=mx(s1[1],s2[1])
-					cr[9]=mn(s1[2],s2[2])
-					s1[9]=s1[9]and mn(s1[9],s2[2])or s2[2]
-					s2[9]=s2[9]and mn(s2[9],s1[2])or s1[2]
+					cr[9],s1[9],s2[9]=mn(s1[2],s2[2])
 				else
 					cr[8],cr[9]=0,0
 				end
@@ -410,6 +410,31 @@ function onTick()
 			
 			for i=2,#M[10]do
 				M[10][i][0]={}
+			end
+			
+			for i,cr in ipairsVar(M[9])do
+				cr[6]=falseVar
+			end
+			
+			for i,v in ipairsVar(thinkers)do			
+				cr=M[9][v[1]]
+				pos=M[8][cr[1]]
+				s1=pos[cr[2]]
+				if s1==cr[3] then
+					if v[2]==cr[4] then
+						v[1]=cr[5]
+						v[2]=0
+						if cr[5]==0 then
+							tableRemove(thinkers,i)
+						end
+					end
+					v[2]=v[2]+1
+				else
+					refWlls=trueVar
+					pos[cr[2]]=clmp(cr[3],s1-2,s1+2)
+					pos[8]=trueVar
+				end
+				pos[9]=i
 			end
 			
 			for i,cr in ipairsVar(M[1])do
@@ -584,10 +609,16 @@ function onTick()
 					out[2]=wall
 					pos,valid=cr[4]
 					for i=14,16 do-- used for keyed doors
-						valid=valid or M[12][1][i]>0 and pos==i+18
+						valid=valid or M[12][1][i]>0 and pos==i
 					end
 					if pos==1 or valid then
-						M[8][M[3][cr[7]][6]][10]=1
+						--M[8][M[3][cr[7]][6]][10]=1
+						pos=M[8][M[9][cr[5]][1]][9]
+						if pos then -- checks that a sector isn't doing anything 
+							thinkers[pos]={cr[5],1} -- if it is, replace its current thinker
+						else
+							thinkers[#thinkers+1]={cr[5],1} -- if it isn't, spawn a new thinker
+						end
 					elseif pos==11then
 						init=trueVar
 						sB(2,trueVar)
@@ -597,31 +628,31 @@ function onTick()
 				end
 			end
 
-			for i,cr in ipairsVar(M[8])do -- moves doors
-				if cr[10]then
-					if cr[10]>2then
-						cr[2]=cr[2]-2
-						if cr[2]==cr[1]then
-							cr[10]=nilVar
-						end
-						refWlls=trueVar
-						cr[8]=trueVar
-					elseif cr[10]>1then
-						cr[11]=cr[11]+1
-						if cr[11]>159then
-							cr[10]=3
-						end
-					else
-						cr[2]=cr[2]+2
-						if cr[2]==cr[9]-4then
-							cr[10]=2
-							cr[11]=0
-						end
-						refWlls=trueVar
-						cr[8]=trueVar
-					end
-				end
-			end
+			--for i,cr in ipairsVar(M[8])do -- moves doors, old implementation
+			--	if cr[10]then
+			--		if cr[10]>2then
+			--			cr[2]=cr[2]-2
+			--			if cr[2]==cr[1]then
+			--				cr[10]=nilVar
+			--			end
+			--			refWlls=trueVar
+			--			cr[8]=trueVar
+			--		elseif cr[10]>1then
+			--			cr[11]=cr[11]+1
+			--			if cr[11]>159then
+			--				cr[10]=3
+			--			end
+			--		else
+			--			cr[2]=cr[2]+2
+			--			if cr[2]==cr[9]-4then
+			--				cr[10]=2
+			--				cr[11]=0
+			--			end
+			--			refWlls=trueVar
+			--			cr[8]=trueVar
+			--		end
+			--	end
+			--end
 		end
 
 		
@@ -653,7 +684,7 @@ function onTick()
 						end
 					else
 						out[pos]=-i
-						table.remove(M[1],i)
+						tableRemove(M[1],i)
 						slt=slt+1
 						ttEnd=ttEnd-1
 					end

@@ -137,6 +137,7 @@ class WADReader:
         sector.light_level = read_2_bytes(off_add(offset,20), byte_format='H') / 255.0
         sector.type = read_2_bytes(off_add(offset,22), byte_format='H')
         sector.tag = read_2_bytes(off_add(offset,24), byte_format='H')
+        sector.neighbouring_lowest_ceiling = None
         return sector
 
     def read_sidedef(self, offset):

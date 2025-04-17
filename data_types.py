@@ -72,7 +72,8 @@ class Sector:
         'ceil_texture',
         'light_level',
         'type',
-        'tag'
+        'tag',
+        'neighbouring_lowest_ceiling',
     ]
 
 
