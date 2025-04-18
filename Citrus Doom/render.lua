@@ -183,9 +183,7 @@ function onTick()
 					elseif cr[4]>3000 then
 						difficulty=cr[4]
 					end
-					if cr[4]>3000 then
-						switchedSwitch=gN(2)
-					end
+					switchedSwitch=gN(2)
 				end
 			end
 			

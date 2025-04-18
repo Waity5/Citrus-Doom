@@ -36,7 +36,6 @@ pRandom=0
 stg=1
 lookAcl=0
 difficulty=2
-thinkers={}
 
 function findMe(i,a,cr)
 	if i<32768then
@@ -61,7 +60,7 @@ function chkPs(p,mv,index,cr,i,j)
 			s2=M[15][pos[4]]
 			if pos[20] then
 				x1=dst-s2[18]
-				if x1<bstDst and s2[23]&1>0 and (s1[23]&1>0 or (p[9]+h<pos[9] or p[9]>pos[9]+s2[19])==falseVar) then
+				if x1<bstDst and s2[23]&1>0 and (s1[23]&1>0 or (p[9]+h<pos[9] or p[9]>pos[9]+s2[19])==falseVar)then
 					hitThing=pos
 					if mv==falseVar then
 						return falseVar
@@ -71,11 +70,11 @@ function chkPs(p,mv,index,cr,i,j)
 				end
 			end
 			if index==pIn and not pos[10]then-- the not pos 10 is to prevent the player picking something up which hasn't been spawned in the renderer
-				if dst<50 then
+				if dst<50then
 					a=s2[25]
-					if a>0 then
-						for n,v in ipairsVar(M[12][a]) do
-							if v>0 and M[12][1][n]<M[12][2][n] then
+					if a>0then
+						for n,v in ipairsVar(M[12][a])do
+							if v>0 and M[12][1][n]<M[12][2][n]then
 								pos=M[12]
 								M[1][cr]=falseVar
 								pos[1][n]=flr(mn(pos[1][n]+v,pos[2][n]))
@@ -108,13 +107,14 @@ function chkPs(p,mv,index,cr,i,j)
 	for i=1,#blkCr do
 		cr=M[2][blkCr[i]]
 		dst,tmpA=chkLnDst(p,M[4][cr[1]],M[4][cr[2]])
-		if (cr[3]&1>0 and s1[23]&1>0) or cr[3]&4==0 then
-			if dst<bstDst then
+		if dst<bstDst then
+			if index==pIn and cr[4]==2 then -- only activate special if it's the player and the special is a walk over
+				thinkers[M[8][M[9][cr[5]][1]][9]or#thinkers+1]={cr[5],1}-- if thinker exists, replace it, if not, create new one
+			end
+			if (cr[3]&1>0 and s1[23]&1>0) or cr[3]&4==0 then
 				bstDst=dst
 				bstA=tmpA
-			end
-		else
-			if dst<bstDst then
+			else
 				tmpTp,tmpBt=mn(cr[9],tp),mx(cr[8],bt)
 				if mn(p[9],tp-h)+24<tmpBt or mx(p[9],bt)+h>tmpTp then
 					bstDst=dst
@@ -354,6 +354,7 @@ function onTick()
 
 	if loaded then
 		if init then
+			thinkers={}
 			refWlls,init=trueVar
 			sndLst=1
 			for i=1,10 do
@@ -421,14 +422,10 @@ function onTick()
 				pos=M[8][cr[1]]
 				s1=pos[cr[2]]
 				if s1==cr[3] then
-					if v[2]==cr[4] then
-						v[1]=cr[5]
-						v[2]=0
-						if cr[5]==0 then
-							tableRemove(thinkers,i)
-						end
+					thinkers[i]=v[2]==cr[4]and{cr[5],0}or{v[1],v[2]+1}
+					if cr[5]==0 then
+						tableRemove(thinkers,i)
 					end
-					v[2]=v[2]+1
 				else
 					refWlls=trueVar
 					pos[cr[2]]=clmp(cr[3],s1-2,s1+2)
@@ -512,8 +509,7 @@ function onTick()
 					end
 					if cr[17] and cr[17]>0then
 						crWeapon=M[14][cr[17]]
-						valid=chkPs(cr,falseVar,i)
-						if cr[9]<=bounds[1] or not valid then
+						if not chkPs(cr,falseVar,i) or cr[9]<=bounds[1] then
 							if hitThing then
 								damageThing(hitThing,s1[21]*((rand()&7)+1))
 							end
@@ -612,13 +608,7 @@ function onTick()
 						valid=valid or M[12][1][i]>0 and pos==i
 					end
 					if pos==1 or valid then
-						--M[8][M[3][cr[7]][6]][10]=1
-						pos=M[8][M[9][cr[5]][1]][9]
-						if pos then -- checks that a sector isn't doing anything 
-							thinkers[pos]={cr[5],1} -- if it is, replace its current thinker
-						else
-							thinkers[#thinkers+1]={cr[5],1} -- if it isn't, spawn a new thinker
-						end
+						thinkers[M[8][M[9][cr[5]][1]][9]or #thinkers+1]={cr[5],1}-- if thinker exists, replace it, if not, create new one
 					elseif pos==11then
 						init=trueVar
 						sB(2,trueVar)

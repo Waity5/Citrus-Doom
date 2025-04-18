@@ -137,7 +137,10 @@ class WADReader:
         sector.light_level = read_2_bytes(off_add(offset,20), byte_format='H') / 255.0
         sector.type = read_2_bytes(off_add(offset,22), byte_format='H')
         sector.tag = read_2_bytes(off_add(offset,24), byte_format='H')
+        sector.neighbouring_highest_ceiling = None
         sector.neighbouring_lowest_ceiling = None
+        sector.neighbouring_highest_floor = None
+        sector.neighbouring_lowest_floor = None
         return sector
 
     def read_sidedef(self, offset):
@@ -226,6 +229,7 @@ class WADReader:
         linedef.sector_tag = read_2_bytes(off_add(offset,8), byte_format='H')
         linedef.front_sidedef_id = read_2_bytes(off_add(offset,10), byte_format='H')
         linedef.back_sidedef_id = read_2_bytes(off_add(offset,12), byte_format='H')
+        linedef.thinker_id = 0
         return linedef
 
     def read_blockmap(self, offset):

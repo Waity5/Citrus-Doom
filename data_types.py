@@ -73,7 +73,10 @@ class Sector:
         'light_level',
         'type',
         'tag',
+        'neighbouring_highest_ceiling',
         'neighbouring_lowest_ceiling',
+        'neighbouring_highest_floor',
+        'neighbouring_lowest_floor',
     ]
 
 
@@ -112,7 +115,8 @@ class Linedef:
         'line_type',
         'sector_tag',
         'front_sidedef_id',
-        'back_sidedef_id'
+        'back_sidedef_id',
+        'thinker_id',
     ]
     __slots__ += ['front_sidedef', 'back_sidedef']
 
