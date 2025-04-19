@@ -193,7 +193,7 @@ def find_sector(tag):
 if __name__ == '__main__':
     start_time=time.time()
     #,"weapons_at_start.wad","jump_to_crash_zone.wad"
-    file_name=["DOOM.WAD","settings_map.wad"] # more rightwards ones overwrite leftwards ones
+    file_name=["DOOM_less_fancy_linedefs.WAD","settings_map.wad"] # more rightwards ones overwrite leftwards ones
     #map_order=["E"+str(1+i//9)+"M"+str(1+i%9) for i in range(3*9)]
     #map_order=["E1M2"]
     #map_order=["SET1"]+map_order
@@ -707,7 +707,6 @@ if __name__ == '__main__':
             
 
         sector_thinkers=[] # format for thinkers is (targ sec, value to change (1 for floor, 2 for ceil), targ height, end delay, next thinker)
-        nil_thinker = insert_thinker((0,0,0,0,0)) # used in activate once stuff, a target thinker is needed to stop it being deleted
         for index in range(len(level_wad.linedefs)): # compiles the sector thinkers
             i=level_wad.linedefs[index]
 
@@ -757,7 +756,7 @@ if __name__ == '__main__':
                 cur_sec = find_sector(i.sector_tag)
                 assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
                 
-                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].neighbouring_lowest_ceiling-8, -1, nil_thinker)
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].neighbouring_lowest_ceiling-8, 1, 0)
                 next_thinker = insert_thinker(thinker)
 
                 thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].floor_height, TICKRATE*30, next_thinker)
