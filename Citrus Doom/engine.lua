@@ -354,8 +354,7 @@ function onTick()
 
 	if loaded then
 		if init then
-			thinkers={}
-			refWlls,init=trueVar
+			thinkers,init={}
 			sndLst=1
 			for i=1,10 do
 				M[i]=M[i+10*levelCr]
@@ -386,16 +385,13 @@ function onTick()
 			blockmapLim=M[10][1][3]
 		end
 
-		if refWlls then
-			refWlls=falseVar
-			for i,cr in ipairsVar(M[2])do
-				if cr[3]&4>0 then
-					s1,s2=M[8][M[3][cr[6]][6]],M[8][M[3][cr[7]][6]]
-					cr[8]=mx(s1[1],s2[1])
-					cr[9],s1[9],s2[9]=mn(s1[2],s2[2])
-				else
-					cr[8],cr[9]=0,0
-				end
+		for i,cr in ipairsVar(M[2])do -- refresh walls
+			if cr[3]&4>0 then
+				s1,s2=M[8][M[3][cr[6]][6]],M[8][M[3][cr[7]][6]]
+				cr[8]=mx(s1[1],s2[1])
+				cr[9],s1[9],s2[9]=mn(s1[2],s2[2])
+			else
+				cr[8],cr[9]=0,0
 			end
 		end
 		
@@ -427,9 +423,8 @@ function onTick()
 						tableRemove(thinkers,i)
 					end
 				else
-					refWlls=trueVar
+					pos[8]=pos[8]or s1~=v
 					pos[cr[2]]=clmp(cr[3],s1-2,s1+2)
-					pos[8]=trueVar
 				end
 				pos[9]=i
 			end

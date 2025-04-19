@@ -707,6 +707,7 @@ if __name__ == '__main__':
             
 
         sector_thinkers=[] # format for thinkers is (targ sec, value to change (1 for floor, 2 for ceil), targ height, end delay, next thinker)
+        nil_thinker = insert_thinker((0,0,0,0,0)) # used in activate once stuff, a target thinker is needed to stop it being deleted
         for index in range(len(level_wad.linedefs)): # compiles the sector thinkers
             i=level_wad.linedefs[index]
 
@@ -721,6 +722,81 @@ if __name__ == '__main__':
                 next_thinker = insert_thinker(thinker)
 
                 thinker = (level_wad.sidedefs[i.back_sidedef_id-1].sector_id+1, 2, s2.neighbouring_lowest_ceiling-8, TICKRATE*4, next_thinker)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=1
+
+            elif i.line_type==2: #W1 Door Stay Open
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+                
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].neighbouring_lowest_ceiling-8, 1, 0)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=2
+
+            elif i.line_type==5: #W1 Floor To Lowest Adjacent Ceiling
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_lowest_ceiling, 1, 0)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=2
+
+            elif i.line_type==9: #S1 Floor Donut (not actually a donut yet)
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_lowest_floor, 1, 0)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=1
+
+            elif i.line_type==16: #W1 Door Close Then Open 30 Sec Later
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+                
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].neighbouring_lowest_ceiling-8, -1, nil_thinker)
+                next_thinker = insert_thinker(thinker)
+
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].floor_height, TICKRATE*30, next_thinker)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=2
+
+            elif i.line_type==18: #S1 Floor To Highest Adjacent Floor
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_highest_floor, 1, 0)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=1
+
+            elif i.line_type==20: #S1 Floor To Higher Floor Change Text (highest floor, no change tex)
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_highest_floor, 1, 0)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=1
+
+            elif i.line_type==22: #W1 Floor To Higher Floor Change Text (highest floor, no change tex)
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_highest_floor, 1, 0)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=2
+
+            elif i.line_type==23: #S1 Floor To Lowest Adjacent Floor
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_lowest_floor, 1, 0)
                 i.thinker_id = insert_thinker(thinker)
 
                 i.line_type=1
@@ -777,7 +853,7 @@ if __name__ == '__main__':
 
                 i.line_type=key_indexes["yellow"]
 
-            elif i.line_type==36: #W1 Floor To 8 Above Heighest Adjacent Fast (not fast)
+            elif i.line_type==36: #W1 Floor To 8 Above Heighest Adjacent Floor Fast (not fast)
                 cur_sec = find_sector(i.sector_tag)
                 assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
                 
@@ -786,7 +862,7 @@ if __name__ == '__main__':
 
                 i.line_type=2
 
-            elif i.line_type==38: #W1 Floor To Lowest Adjacent
+            elif i.line_type==38: #W1 Floor To Lowest Adjacent Floor
                 cur_sec = find_sector(i.sector_tag)
                 assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
                 
@@ -794,6 +870,30 @@ if __name__ == '__main__':
                 i.thinker_id = insert_thinker(thinker)
 
                 i.line_type=2
+
+            elif i.line_type==46: #GR Door (not gun activated)
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+                
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].floor_height, 1, 0)
+                next_thinker = insert_thinker(thinker)
+
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].neighbouring_lowest_ceiling-8, TICKRATE*4, next_thinker)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=1
+
+            elif i.line_type==62: #SR Lift
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+                
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].floor_height, 1, 0)
+                next_thinker = insert_thinker(thinker)
+
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_lowest_floor, TICKRATE*3, next_thinker)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=1
 
             elif i.line_type==63: #SR Door
                 cur_sec = find_sector(i.sector_tag)
@@ -807,6 +907,45 @@ if __name__ == '__main__':
 
                 i.line_type=1
 
+            elif i.line_type==70: #SR Floor To 8 Above Heighest Adjacent Floor Fast (not fast)
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+                
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_highest_floor+8, 1, 0)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=1
+
+            elif i.line_type==76: #WR Door Close Then Open 30 Sec Later
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+                
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].neighbouring_lowest_ceiling-8, 1, 0)
+                next_thinker = insert_thinker(thinker)
+
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].floor_height, TICKRATE*30, next_thinker)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=2
+
+            elif i.line_type==82: #WR Floor To Lowest Adjacent Floor
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_lowest_floor, 1, 0)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=2
+
+            elif i.line_type==86: #WR Door Stay Open
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].neighbouring_lowest_ceiling-8, 1, 0)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=2
+
             elif i.line_type==88: #WR Lift Also Monsters (not monsters)
                 cur_sec = find_sector(i.sector_tag)
                 assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
@@ -815,6 +954,36 @@ if __name__ == '__main__':
                 next_thinker = insert_thinker(thinker)
 
                 thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_lowest_floor, TICKRATE*3, next_thinker)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=2
+
+            elif i.line_type==90: #WR Door
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+                
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].floor_height, 1, 0)
+                next_thinker = insert_thinker(thinker)
+
+                thinker = (cur_sec, 2, level_wad.sectors[cur_sec-1].neighbouring_lowest_ceiling-8, TICKRATE*4, next_thinker)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=2
+
+            elif i.line_type==91: #WR Floor To Lowest Adjacent Ceiling
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_lowest_ceiling, 1, 0)
+                i.thinker_id = insert_thinker(thinker)
+
+                i.line_type=2
+
+            elif i.line_type==98: #WR Floor To 8 Above Heighest Adjacent Floor Fast (not fast)
+                cur_sec = find_sector(i.sector_tag)
+                assert cur_sec != 0, "No sector has the tag "+str(i.sector_tag)+" used by linedef "+str(index)
+                
+                thinker = (cur_sec, 1, level_wad.sectors[cur_sec-1].neighbouring_highest_floor+8, 1, 0)
                 i.thinker_id = insert_thinker(thinker)
 
                 i.line_type=2
@@ -836,6 +1005,14 @@ if __name__ == '__main__':
                 i.thinker_id = insert_thinker(thinker)
 
                 i.line_type=2
+
+            elif 0<i.line_type<3000 and not i.line_type in [11,#normal exit
+                                                            35,#set light level
+                                                            48,#moving texture
+                                                            51,#secret exit
+                                                            97,#teleport
+                                                            ]:
+                print("unknown linedef type",i.line_type,"in level",map_name)
 
             
         
